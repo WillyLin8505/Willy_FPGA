@@ -1,0 +1,337 @@
+//-----------------------------------------------------------------------------
+//  testbench register
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+//  project register
+//-----------------------------------------------------------------------------
+//----------------------------------------------------------------------------- config register 
+
+"r_i2cm_top_nack_0": begin
+   `TB_TOP.r_i2cm_top_nack_0 = reg_value;
+//   force  `REG_CONFIG_TOP.r_i2cm_nack_0 = `TB_TOP.r_i2cm_top_nack_0;
+end
+
+"r_i2cm_top_type_0": begin
+   `TB_TOP.r_i2cm_top_type_0 = reg_value;
+//   force  `REG_CONFIG_TOP.r_i2cm_type_0 = `TB_TOP.r_i2cm_top_type_0;
+end
+
+"r_i2cm_top_stb_0": begin
+   `TB_TOP.r_i2cm_top_stb_0 = reg_value;
+//   force  `REG_CONFIG_TOP.r_i2cm_stb_0 = `TB_TOP.r_i2cm_top_stb_0;
+end
+
+"r_i2cm_top_seq_0": begin
+   `TB_TOP.r_i2cm_top_seq_0 = reg_value;
+//   force  `REG_CONFIG_TOP.r_i2cm_seq_0 = `TB_TOP.r_i2cm_top_seq_0;
+end
+
+"r_i2cm_top_num_0": begin
+   `TB_TOP.r_i2cm_top_num_0 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_num_0 = `TB_TOP.r_i2cm_top_num_0;
+end
+
+"r_i2cm_top_dev_id_0": begin
+  `TB_TOP.r_i2cm_top_dev_id_0 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_dev_id_0 = `TB_TOP.r_i2cm_top_dev_id_0;
+end
+
+"r_i2cm_top_addr_0": begin
+   `TB_TOP.r_i2cm_top_addr_0 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_addr_0 = `TB_TOP.r_i2cm_top_addr_0;
+end
+
+"r_i2cm_top_nack_1": begin
+   `TB_TOP.r_i2cm_top_nack_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_nack_1 = `TB_TOP.r_i2cm_top_nack_1;
+end
+
+"r_i2cm_top_type_1": begin
+   `TB_TOP.r_i2cm_top_type_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_type_1 = `TB_TOP.r_i2cm_top_type_1;
+end
+
+"r_i2cm_top_stb_1": begin
+   `TB_TOP.r_i2cm_top_stb_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_stb_1 = `TB_TOP.r_i2cm_top_stb_1;
+end
+
+"r_i2cm_top_seq_1": begin
+   `TB_TOP.r_i2cm_top_seq_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_seq_1 = `TB_TOP.r_i2cm_top_seq_1;
+end
+
+"r_i2cm_top_num_1": begin
+   `TB_TOP.r_i2cm_top_num_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_num_1 = `TB_TOP.r_i2cm_top_num_1;
+end
+
+"r_i2cm_top_dev_id_1": begin
+  `TB_TOP.r_i2cm_top_dev_id_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_dev_id_1 = `TB_TOP.r_i2cm_top_dev_id_1;
+end
+
+"r_i2cm_top_addr_1": begin
+  `TB_TOP.r_i2cm_top_addr_1 = reg_value;
+//  force  `REG_CONFIG_TOP.r_i2cm_addr_1 = `TB_TOP.r_i2cm_top_addr_1;
+end
+
+//------------------------------------------------test config
+
+"i_id_dir_0": begin
+  `TB_TOP.i_id_dir_0 = reg_value;
+
+end
+
+"i_id_dir_1": begin
+  `TB_TOP.i_id_dir_1 = reg_value;
+
+end
+
+"i_data_nack": begin
+   `TB_TOP.i_data_nack = reg_value;
+
+end
+
+"i_dev_id_nack": begin
+   `TB_TOP.i_dev_id_nack = reg_value;
+
+end
+
+"i_trg_0": begin
+   `TB_TOP.i_trg_0 = reg_value;
+
+end
+
+"i_trg_1": begin
+   `TB_TOP.i_trg_1 = reg_value;
+
+end
+
+"i_trg_0_dly": begin
+   `TB_TOP.i_trg_0_dly = reg_value;
+
+end
+
+"i_trg_1_dly": begin
+   `TB_TOP.i_trg_1_dly = reg_value;
+
+end
+
+"i_nack_timing": begin
+   `TB_TOP.i_nack_timing = reg_value;
+
+end
+
+
+//-----------------------------------------------------------------------------data register
+"r_i2cm_data_0": begin
+   `TB_TOP.r_i2cm_data_0 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_0 = `TB_TOP.r_i2cm_data_0;
+end
+
+"r_i2cm_data_1": begin
+   `TB_TOP.r_i2cm_data_1 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_1 = `TB_TOP.r_i2cm_data_1;
+end
+
+"r_i2cm_data_2": begin
+   `TB_TOP.r_i2cm_data_2 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_2 = `TB_TOP.r_i2cm_data_2;
+end
+
+"r_i2cm_data_3": begin
+   `TB_TOP.r_i2cm_data_3 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_3 = `TB_TOP.r_i2cm_data_3;
+end
+
+"r_i2cm_data_4": begin
+   `TB_TOP.r_i2cm_data_4 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_4 = `TB_TOP.r_i2cm_data_4;
+end
+
+"r_i2cm_data_5": begin
+   `TB_TOP.r_i2cm_data_5 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_5 = `TB_TOP.r_i2cm_data_5;
+end
+
+"r_i2cm_data_6": begin
+   `TB_TOP.r_i2cm_data_6 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_6 = `TB_TOP.r_i2cm_data_6;
+end
+
+"r_i2cm_data_7": begin
+   `TB_TOP.r_i2cm_data_7 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_7 = `TB_TOP.r_i2cm_data_7;
+end
+
+"r_i2cm_data_8": begin
+   `TB_TOP.r_i2cm_data_8 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_8 = `TB_TOP.r_i2cm_data_8;
+end
+
+"r_i2cm_data_9": begin
+   `TB_TOP.r_i2cm_data_9 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_9 = `TB_TOP.r_i2cm_data_9;
+end
+
+"r_i2cm_data_10": begin
+   `TB_TOP.r_i2cm_data_10 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_10 = `TB_TOP.r_i2cm_data_10;
+end
+
+"r_i2cm_data_11": begin
+   `TB_TOP.r_i2cm_data_11 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_11 = `TB_TOP.r_i2cm_data_11;
+end
+
+"r_i2cm_data_12": begin
+   `TB_TOP.r_i2cm_data_12 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_12 = `TB_TOP.r_i2cm_data_12;
+end
+
+"r_i2cm_data_13": begin
+   `TB_TOP.r_i2cm_data_13 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_13 = `TB_TOP.r_i2cm_data_13;
+end
+
+"r_i2cm_data_14": begin
+   `TB_TOP.r_i2cm_data_14 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_14 = `TB_TOP.r_i2cm_data_14;
+end
+
+"r_i2cm_data_15": begin
+   `TB_TOP.r_i2cm_data_15 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_15 = `TB_TOP.r_i2cm_data_15;
+end
+
+"r_i2cm_data_16": begin
+   `TB_TOP.r_i2cm_data_16 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_16 = `TB_TOP.r_i2cm_data_16;
+end
+
+"r_i2cm_data_17": begin
+   `TB_TOP.r_i2cm_data_17 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_17 = `TB_TOP.r_i2cm_data_17;
+end
+
+"r_i2cm_data_18": begin
+   `TB_TOP.r_i2cm_data_18 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_18 = `TB_TOP.r_i2cm_data_18;
+end
+
+"r_i2cm_data_19": begin
+   `TB_TOP.r_i2cm_data_19 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_19 = `TB_TOP.r_i2cm_data_19;
+end
+
+"r_i2cm_data_20": begin
+   `TB_TOP.r_i2cm_data_20 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_20 = `TB_TOP.r_i2cm_data_20;
+end
+
+"r_i2cm_data_21": begin
+   `TB_TOP.r_i2cm_data_21 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_21 = `TB_TOP.r_i2cm_data_21;
+end
+
+"r_i2cm_data_22": begin
+   `TB_TOP.r_i2cm_data_22 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_22 = `TB_TOP.r_i2cm_data_22;
+end
+
+"r_i2cm_data_23": begin
+   `TB_TOP.r_i2cm_data_23 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_23 = `TB_TOP.r_i2cm_data_23;
+end
+
+"r_i2cm_data_24": begin
+   `TB_TOP.r_i2cm_data_24 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_24 = `TB_TOP.r_i2cm_data_24;
+end
+
+"r_i2cm_data_25": begin
+   `TB_TOP.r_i2cm_data_25 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_25 = `TB_TOP.r_i2cm_data_25;
+end
+
+"r_i2cm_data_26": begin
+   `TB_TOP.r_i2cm_data_26 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_26 = `TB_TOP.r_i2cm_data_26;
+end
+
+"r_i2cm_data_27": begin
+   `TB_TOP.r_i2cm_data_27 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_27 = `TB_TOP.r_i2cm_data_27;
+end
+
+"r_i2cm_data_28": begin
+   `TB_TOP.r_i2cm_data_28 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_28 = `TB_TOP.r_i2cm_data_28;
+end
+
+"r_i2cm_data_29": begin
+   `TB_TOP.r_i2cm_data_29 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_29 = `TB_TOP.r_i2cm_data_29;
+end
+
+"r_i2cm_data_30": begin
+   `TB_TOP.r_i2cm_data_30 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_30 = `TB_TOP.r_i2cm_data_30;
+end
+
+"r_i2cm_data_31": begin
+   `TB_TOP.r_i2cm_data_31 = reg_value;
+   force  `REG_DATA_TOP.i2cm_data_31 = `TB_TOP.r_i2cm_data_31;
+end
+
+//--------------------------------------------------------isp data
+
+"reg_awb_bgain_07_00": begin
+  `TB_TOP.reg_awb_bgain_07_00 = reg_value;
+ //  force  `REG_DATA_TOP.reg_awb_bgain_07_00 = `TB_TOP.reg_awb_bgain_07_00;
+end
+
+"reg_awb_bgain_11_08": begin
+   `TB_TOP.reg_awb_bgain_11_08 = reg_value;
+ //  force  `REG_DATA_TOP.reg_awb_bgain_11_08 = `TB_TOP.reg_awb_bgain_11_08;
+end
+
+"reg_awb_ggain_07_00": begin
+   `TB_TOP.reg_awb_ggain_07_00 = reg_value;
+ //  force  `REG_DATA_TOP.reg_awb_ggain_07_00 = `TB_TOP.reg_awb_ggain_07_00;
+end
+
+"reg_awb_ggain_11_08": begin
+   `TB_TOP.reg_awb_ggain_11_08 = reg_value;
+ //  force  `REG_DATA_TOP.reg_awb_ggain_11_08 = `TB_TOP.reg_awb_ggain_11_08;
+end
+
+"reg_awb_rgain_07_00": begin
+   `TB_TOP.reg_awb_rgain_07_00 = reg_value;
+  // force  `REG_DATA_TOP.reg_awb_rgain_07_00 = `TB_TOP.reg_awb_rgain_07_00;
+end
+
+"reg_awb_rgain_11_08": begin
+  `TB_TOP.reg_awb_rgain_11_08 = reg_value;
+ //  force  `REG_DATA_TOP.reg_awb_rgain_11_08 = `TB_TOP.reg_awb_rgain_11_08;
+end
+
+"reg_ssr_expln_15_08": begin
+   `TB_TOP.reg_ssr_expln_15_08 = reg_value;
+  // force  `REG_DATA_TOP.reg_ssr_expln_15_08 = `TB_TOP.reg_ssr_expln_15_08;
+end
+
+"reg_ssr_exptp_07_00": begin
+   `TB_TOP.reg_ssr_exptp_07_00 = reg_value;
+ //  force  `REG_DATA_TOP.reg_ssr_exptp_07_00 = `TB_TOP.reg_ssr_exptp_07_00;
+end
+
+"reg_ssr_exptp_11_08": begin
+   `TB_TOP.reg_ssr_exptp_11_08 = reg_value;
+ //  force  `REG_DATA_TOP.reg_ssr_exptp_11_08 = `TB_TOP.reg_ssr_exptp_11_08;
+end
+
+

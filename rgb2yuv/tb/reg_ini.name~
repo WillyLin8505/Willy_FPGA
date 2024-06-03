@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------
+//  testbench register
+//-----------------------------------------------------------------------------
+
+"sensor_tpat_en": begin
+   `TB_TOP.sensor_tpat_en = reg_value;
+end
+
+"reg_ssr_hwin_sz": begin
+   `TB_TOP.reg_ssr_hwin_sz = reg_value;
+end
+
+"reg_ssr_vwin_sz": begin
+   `TB_TOP.reg_ssr_vwin_sz = reg_value;
+end
+
+"reg_ssr_hpad_sz": begin
+   `TB_TOP.reg_ssr_hpad_sz = reg_value;
+end
+
+"reg_ssr_vpad_sz": begin
+   `TB_TOP.reg_ssr_vpad_sz = reg_value;
+end
+

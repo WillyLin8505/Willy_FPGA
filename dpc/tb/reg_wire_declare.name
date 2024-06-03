@@ -1,0 +1,35 @@
+reg [15:0]        ini_sensor_tpat_en;
+reg [15:0]        ini_ssr_hwin_sz;
+reg [15:0]        ini_ssr_vwin_sz;
+reg [15:0]        ini_sensor_hblkf_sz;
+reg [15:0]        ini_sensor_hblkb_sz;
+reg [15:0]        ini_src_sel;
+reg [15:0]        ini_golden_sel;
+reg [31:0] r_ssr_again;
+reg [31:0] r_ssr_blc_tgt;
+reg [31:0] r_ssr_drkc;
+reg [31:0] r_ssr_cgcf;
+reg [31:0] r_ssr_ns_parm1;
+reg [31:0] r_ssr_ns_parm2;
+reg [31:0]  r_step1_w_low_nlm;     
+reg [31:0]  r_step1_w_transit_rng; 
+reg [31:0]  r_step1_b_low_nlm;     
+reg [31:0]  r_step1_b_transit_rng; 
+
+reg [31:0]  r_step2_w_rto_thres;   
+reg [31:0]  r_step2_w_buf_rng;     
+reg [31:0]  r_step2_b_rto_thres;   
+reg [31:0]  r_step2_b_buf_rng;     
+
+reg [31:0]  r_step2_w_cnt_thres;   
+reg [31:0]  r_step2_w_cnt_buf_rng; 
+reg [31:0]  r_step2_b_cnt_thres;   
+reg [31:0]  r_step2_b_cnt_buf_rng; 
+
+reg [31:0]  r_dpc_en; 
+reg [31:0]  r_debug_en; 
+reg [31:0]  r_repl_col; 
+reg [31:0]  r_mode_sel;
+reg [31:0]  r_coord_mirror; 
+reg [31:0]  r_haddr_start; 
+ 

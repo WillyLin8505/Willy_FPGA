@@ -1,0 +1,6 @@
+reg [2:0] ini_sel;
+reg       r_vtc_en;
+reg       r_vtc_en_sel;
+reg [7:0] r_vtc_tp_sel;
+reg [3:0] r_vtc_vsync_offset1108;
+reg [7:0] r_vtc_vsync_offset0700;

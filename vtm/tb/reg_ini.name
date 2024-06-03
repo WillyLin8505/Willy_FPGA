@@ -1,0 +1,29 @@
+//-----------------------------------------------------------------------------
+//  testbench register
+//-----------------------------------------------------------------------------
+
+
+"ini_sel": begin
+   `TB_TOP.ini_sel = reg_value;
+end
+
+"r_vtc_en": begin
+   `TB_TOP.r_vtc_en = reg_value;
+end
+
+"r_vtc_en_sel": begin
+   `TB_TOP.r_vtc_en_sel = reg_value;
+end
+
+"r_vtc_tp_sel": begin
+   `TB_TOP.r_vtc_tp_sel = reg_value;
+end
+
+"r_vtc_vsync_offset1108": begin
+   `TB_TOP.r_vtc_vsync_offset1108 = reg_value;
+end
+
+"r_vtc_vsync_offset0700": begin
+   `TB_TOP.r_vtc_vsync_offset0700 = reg_value;
+end
+

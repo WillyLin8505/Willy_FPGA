@@ -1,0 +1,617 @@
+
+// +FHDR -----------------------------------------------------------------------
+// Copyright (c) Silicon Optronics. Inc. 2021
+//
+// File Name:           mlbf_mon.v
+// Author:              Willy lin
+// Date:                2022/1/21
+// File Description:    monitor
+// -FHDR -----------------------------------------------------------------------
+
+module mon_backup();
+//================================================================================
+//  signal declaration
+//================================================================================
+string                                 target_module      = "line_buf_v2";
+string                                 dump_img_file      = "";
+string                                 dump_img_path      = "./dump_img";
+integer                                dump_img_fp;
+
+//------------------------------------------------------------------parameter
+`include "tb_parameter.vh"
+localparam                             MEM_TYPE           = "FPGA_BLKRAM";                                      // "FPGA_BLKRAM", 1PSRAM
+localparam                             MEM_DEP            = DBUF_DEP/2;                                         //memory depth
+localparam                             MEM_DW             = DBUF_DW;                                            //memory data width
+localparam                             DO_FFO             = "True";                                             // F.F. data output
+localparam                             DO_ON_WR           = "True";                                             // "FALSE": Don't read data while WR for port-A
+localparam                             MEM_AW             = $clog2(DBUF_DEP/2); 
+localparam                             MEM_NAME           = "asic_sram_sp960x128";
+
+localparam                             CNT_WTH            = $clog2(DBUF_DEP); 
+localparam                             MAX_PAD_WTH        = 4; 
+    
+//------------------------------------------------------------------test bench 
+wire                                   rst_n              = `TB_TOP.rst_n;
+wire                                   clk                = `TB_TOP.clk;
+wire [DBUF_DW-1:0]                     i_data_0           = `TB_TOP.i_data_0;
+wire                                   i_hstr_0           = `TB_TOP.i_hstr_0;
+wire                                   i_href_0           = `TB_TOP.i_href_0;
+wire                                   i_hend_0           = `TB_TOP.i_hend_0;
+wire                                   i_vstr_0           = `TB_TOP.i_vstr_0;
+wire                                   i_vend_0           = `TB_TOP.i_vend_0;
+reg                                    i_fstr_0           = `TB_TOP.i_fstr_0;
+wire [10:0]                            ini_ssr_hwin_sz    = `TB_TOP.ini_ssr_hwin_sz;
+wire                                   interrupt_mask     = `TB_TOP.interrupt_mask;
+
+wire [DBUF_DW-1:0]                     ssr_data_1         = `TB_TOP.ssr_data_1[DBUF_DW-1:0];
+wire                                   ssr_href_1         = `TB_TOP.ssr_href_1;
+wire                                   wb_ver_eq          = `TB_TOP.wb_ver_eq;
+wire                                   wb_vld             = `TB_TOP.wb_vld;
+wire [SEN_PIXEL_DLY*CNT_WTH-1:0]       gmem_addra_q       = `TB_TOP.gmem_addra_q;
+wire [KRNV_SZ-1:0]                     wb_sel_line        = `TB_TOP.wb_sel_line;
+wire                                   wb_hor_eq          = `TB_TOP.wb_hor_eq;
+wire [CNT_WTH-1 : 0]                   wb_hor_cnt         = `TB_TOP.wb_hor_cnt;
+wire [DBUF_DW-1:0]                     wb_data            = `TB_TOP.wb_data;
+//------------------------------------------------------------------line buf 
+wire [DBUF_DW*KRNV_SZ-1:0]             line_bf_data       = `LINE_BUF.o_data_nxt;
+wire                                   line_bf_dvld       = `LINE_BUF.o_dvld_nxt;
+wire                                   line_bf_vstr       = `LINE_BUF.o_vstr_nxt;
+wire                                   line_bf_hstr       = `LINE_BUF.o_hstr_nxt;
+wire                                   line_bf_hend       = `LINE_BUF.o_hend_nxt;
+wire                                   line_bf_vend       = `LINE_BUF.o_vend_nxt;
+
+wire                                   hor_fr_pad_smo     = `LINE_BUF.hor_fr_pad_smo;
+wire                                   hor_fr_pad_fnl_smo = `LINE_BUF.hor_fr_pad_fnl_smo;
+wire                                   hor_act_line_smo   = `LINE_BUF.hor_act_line_smo;
+wire                                   hor_bk_pad_smo     = `LINE_BUF.hor_bk_pad_smo;
+wire                                   hor_line_blk_smo   = `LINE_BUF.hor_line_blk_smo;
+wire                                   hor_clr_smo        = `LINE_BUF.hor_clr_smo;
+wire                                   fr_pad_com_smo     = `LINE_BUF.fr_pad_com_smo;
+wire                                   rd_cyc_smo         = `LINE_BUF.rd_cyc_smo;
+
+wire                                   ver_fr_buf_smo     = `LINE_BUF.ver_fr_buf_smo;
+wire                                   ver_top_pad_smo    = `LINE_BUF.ver_top_pad_smo;
+wire                                   ver_act_line_smo   = `LINE_BUF.ver_act_line_smo;
+wire                                   ver_btm_pad_smo    = `LINE_BUF.ver_btm_pad_smo;
+wire                                   ver_sel_sft_smo    = `LINE_BUF.ver_sel_sft_smo;
+wire                                   ver_idle_smo       = `LINE_BUF.ver_idle_smo;
+
+wire                                   fr_pad_final_eq    = `LINE_BUF.fr_pad_final_eq;
+wire                                   act_pad_num_eq     = `LINE_BUF.act_pad_num_eq;
+wire                                   hblk_eq            = `LINE_BUF.hblk_eq;
+wire [CNT_WTH-1:0]                     hor_num            = `LINE_BUF.hor_num;
+wire                                   hor_href_eq        = `LINE_BUF.hor_href_eq;
+wire                                   href_num_eq        = `LINE_BUF.href_num_eq;
+
+//------------------------------------------------------------------line range 
+wire [DBUF_DW*KRNV_SZ*ODATA_RNG-1:0]   line_rng_data      = `LINE_RNG.o_data;
+wire                                   line_rng_dvld      = `LINE_RNG.o_dvld;
+wire                                   line_rng_vstr      = `LINE_RNG.o_vstr;
+wire                                   line_rng_hstr      = `LINE_RNG.o_hstr;
+wire                                   line_rng_hend      = `LINE_RNG.o_hend;
+wire                                   line_rng_vend      = `LINE_RNG.o_vend;
+
+//------------------------------------------------------------------monitor 
+genvar                                 gmi,gmi_2,gmi_3;
+integer                                rst_i,rst_i_2,rst_i_3;
+event                                  data_cmp_err,range_data_cmp_err,fr_pad_num_err,bk_pad_num_err,total_num_err;
+
+//--------------------------------------------controll and counter 
+reg  [KRNV_SZ*MAX_PAD_WTH-1:0]         ctrl_num;
+wire [KRNV_SZ*MAX_PAD_WTH-1:0]         ctrl_num_nxt;
+wire [KRNV_SZ*MAX_PAD_WTH-1:0]         ctrl_ini_num;
+
+reg                                    fr_en;
+wire                                   fr_en_nxt;
+
+reg                                    bk_en;
+wire                                   bk_en_nxt;
+
+reg  [CNT_WTH-1 : 0]                   hor_cnt;
+wire [CNT_WTH-1 : 0]                   hor_cnt_nxt;
+wire                                   hor_cnt_inc;
+wire                                   hor_cnt_clr;
+wire                                   hor_cnt_set;
+wire [CNT_WTH-1 : 0]                   hor_cnt_set_val;
+
+reg  [CNT_WTH-1 : 0]                   ver_cnt;
+wire [CNT_WTH-1 : 0]                   ver_cnt_nxt;
+wire                                   ver_cnt_inc;
+wire                                   ver_cnt_clr;
+
+reg  [CNT_WTH-1 : 0]                   sel_cnt;
+wire [CNT_WTH-1 : 0]                   sel_cnt_nxt;
+wire                                   sel_cnt_inc;
+wire                                   sel_cnt_clr;
+wire                                   sel_cnt_set;
+wire [CNT_WTH-1 : 0]                   sel_cnt_set_val;
+
+reg  [CNT_WTH-1 : 0]                   wr_cnt;
+wire [CNT_WTH-1 : 0]                   wr_cnt_nxt;
+wire                                   wr_cnt_inc;
+wire                                   wr_cnt_clr;
+
+reg  [CNT_WTH-1 : 0]                   rd_cnt;
+wire [CNT_WTH-1 : 0]                   rd_cnt_nxt;
+wire                                   rd_cnt_inc;
+wire                                   rd_cnt_clr;
+wire                                   rd_cnt_set;
+wire [CNT_WTH-1:0]                     rd_cnt_set_val;
+
+reg  [KRNV_SZ*MAX_PAD_WTH-1:0]         last_col_0;
+wire [KRNV_SZ*MAX_PAD_WTH-1:0]         last_col_0_nxt;
+reg  [KRNV_SZ*MAX_PAD_WTH-1:0]         last_col_1;
+wire [KRNV_SZ*MAX_PAD_WTH-1:0]         last_col_1_nxt;
+
+reg                                    i_href_0_dly;
+
+//--------------------------------------------equal
+wire                                   sel_cnt_eq;
+wire                                   fr_pad_eq;
+wire                                   bk_pad_eq;
+wire                                   top_pad_eq;
+wire                                   btm_pad_eq;
+wire                                   hor_num_min1_eq;
+wire                                   hor_num_eq;
+
+//--------------------------------------------memory and data 
+reg  [DBUF_DW-1 : 0]                   mem           [0:KRNV_SZ-1][0:DBUF_DEP-1];
+reg  [DBUF_DW-1 : 0]                   mem_nxt       [0:KRNV_SZ-1][0:DBUF_DEP-1];
+reg  [DBUF_DW-1 : 0]                   wb_mem        [0:BUF_LINE_DLY-1][0:480-1];
+reg  [DBUF_DW-1 : 0]                   wb_mem_nxt    [0:BUF_LINE_DLY-1][0:480-1];
+reg                                    wb_mem_en     [0:BUF_LINE_DLY-1][0:480-1];
+
+wire [CNT_WTH-1 : 0]                   wb_addr       [0:KRNV_SZ-1];
+
+wire                                   ip_en         [0:KRNV_SZ-1];
+wire [DBUF_DW-1:0]                     gmem_do       [0:KRNV_SZ-1];
+wire                                   gmem_do_vld   [0:KRNV_SZ-1];
+
+wire [KRNV_SZ*DBUF_DW-1:0]             golden_data;
+
+wire                                gmem_we;
+wire [CNT_WTH-1 : 0]               gmem_addra;
+wire [CNT_WTH-1 : 0]               gmem_addrb;
+wire [DBUF_DW-1:0]                  gmem_di; 
+
+//--------------------------------------------front padding and back padding 
+wire [KRNV_SZ*DBUF_DW-1:0]             fr_pad_num_0;
+reg  [KRNV_SZ*DBUF_DW-1:0]             bk_pad_num_0;
+wire [KRNV_SZ*DBUF_DW-1:0]             bk_pad_num_0_nxt;
+
+wire [KRNV_SZ*DBUF_DW-1:0]             fr_pad_num_1;
+reg  [KRNV_SZ*DBUF_DW-1:0]             bk_pad_num_1;
+wire [KRNV_SZ*DBUF_DW-1:0]             bk_pad_num_1_nxt;
+
+wire                                   fr_pad_num_0_eq;
+wire                                   fr_pad_num_1_eq;
+wire                                   bk_pad_num_0_eq;
+wire                                   bk_pad_num_1_eq;
+
+reg  [CNT_WTH-1 : 0]                   fr_pad_num_0_cnt;
+wire [CNT_WTH-1 : 0]                   fr_pad_num_0_cnt_nxt;
+wire                                   fr_pad_num_0_cnt_inc;
+wire                                   fr_pad_num_0_cnt_clr;
+
+reg  [CNT_WTH-1 : 0]                   fr_pad_num_1_cnt;
+wire [CNT_WTH-1 : 0]                   fr_pad_num_1_cnt_nxt;
+wire                                   fr_pad_num_1_cnt_inc;
+wire                                   fr_pad_num_1_cnt_clr;
+
+reg  [CNT_WTH-1 : 0]                   bk_pad_num_0_cnt;
+wire [CNT_WTH-1 : 0]                   bk_pad_num_0_cnt_nxt;
+wire                                   bk_pad_num_0_cnt_inc;
+wire                                   bk_pad_num_0_cnt_clr;
+
+reg  [CNT_WTH-1 : 0]                   bk_pad_num_1_cnt;
+wire [CNT_WTH-1 : 0]                   bk_pad_num_1_cnt_nxt;
+wire                                   bk_pad_num_1_cnt_inc;
+wire                                   bk_pad_num_1_cnt_clr;
+
+wire                                   fr_pad_num_1_cnt_chk;
+wire                                   top_pad_num_chk;
+wire                                   bk_pad_num_1_cnt_chk;
+wire                                   bk_pad_num_chk;
+
+
+reg                                    col_sel;
+wire                                   col_sel_nxt;
+
+//--------------------------------------------total number 
+wire [CNT_WTH-1 : 0]                   total_num;
+//--------------------------------------------line range 
+reg  [KRNV_SZ*DBUF_DW-1:0]             mem_rng       [0:ODATA_RNG-1][0:DBUF_DEP-1];
+wire [KRNV_SZ*DBUF_DW*ODATA_RNG-1:0]   golden_rng_nxt;
+reg  [KRNV_SZ*DBUF_DW*ODATA_RNG-1:0]   golden_rng;
+reg  [KRNV_SZ*DBUF_DW*ODATA_RNG-1:0]   golden_rng_dly;
+
+//================================================================================
+//  behavior description
+//================================================================================
+
+//------------------------------------------------------------ controll and counter (vertical part)
+
+assign ctrl_num_nxt     = ({KRNV_SZ*MAX_PAD_WTH{(!ver_idle_smo & !ver_btm_pad_smo & i_hstr_0) | (ver_btm_pad_smo & line_bf_hstr)}} &    
+                                                                                              {ctrl_num[(KRNV_SZ-1)*MAX_PAD_WTH-1:0],sel_cnt_nxt[MAX_PAD_WTH-1:0]}) | 
+                                            
+                          ({KRNV_SZ*MAX_PAD_WTH{(!ver_idle_smo & !ver_btm_pad_smo & !i_hstr_0) | (ver_btm_pad_smo & !line_bf_hstr)}} & ctrl_num) | 
+                          ({KRNV_SZ*MAX_PAD_WTH{(ver_idle_smo & (|PAD_MODE))}} & {KRNV_SZ{({{MAX_PAD_WTH-1{1'b0}},1'b1}),({{MAX_PAD_WTH-1{1'b0}},1'b0})}}) | 
+                          ({KRNV_SZ*MAX_PAD_WTH{(ver_idle_smo & !PAD_MODE)}} & {KRNV_SZ*MAX_PAD_WTH{1'b0}}); 
+
+assign col_sel_nxt      = sel_cnt_inc ^ col_sel;
+assign last_col_0_nxt   = col_sel & !ver_btm_pad_smo ? sel_cnt : last_col_0;
+assign last_col_1_nxt   = !col_sel & !ver_btm_pad_smo ? sel_cnt : last_col_1;
+
+assign fr_en_nxt        = (fr_en | line_bf_hstr) & !fr_pad_eq;
+assign bk_en_nxt        = (bk_en | hor_bk_pad_smo) & !bk_pad_eq;
+
+assign hor_cnt_nxt      = (hor_cnt_set ? hor_cnt_set_val : (hor_cnt_inc ? hor_cnt + 1'b1 : hor_cnt) )& {(CNT_WTH){~hor_cnt_clr}}; //control front padding and back padding 
+assign hor_cnt_inc      = line_bf_dvld;
+assign hor_cnt_clr      = fr_pad_eq | bk_pad_eq | hblk_eq | i_hstr_0;
+assign hor_cnt_set      = 1'b0;
+assign hor_cnt_set_val  = 1'b1;
+
+assign ver_cnt_nxt      = (ver_cnt_inc ? ver_cnt + 1'b1 : ver_cnt) & {(CNT_WTH){~ver_cnt_clr}};                                // count line number
+assign ver_cnt_inc      = (i_hstr_0 & ver_top_pad_smo) | (ver_btm_pad_smo & hblk_eq);
+assign ver_cnt_clr      = ver_idle_smo | (hblk_eq & ver_act_line_smo);
+
+assign sel_cnt_nxt      = sel_cnt_set ? sel_cnt_set_val : (sel_cnt_inc ? sel_cnt + 1'b1 : sel_cnt) & {(CNT_WTH){~sel_cnt_clr}};
+assign sel_cnt_inc      = i_hstr_0;
+assign sel_cnt_clr      = ver_idle_smo | sel_cnt_eq;
+assign sel_cnt_set      = ver_btm_pad_smo;
+assign sel_cnt_set_val  = ver_cnt[0] | !PAD_MODE ? last_col_1 : last_col_0;
+
+assign wr_cnt_nxt       = (wr_cnt_inc ? wr_cnt + 1'b1 : wr_cnt) & {(CNT_WTH){~wr_cnt_clr}};
+assign wr_cnt_inc       = i_href_0_dly;
+assign wr_cnt_clr       = i_hstr_0;
+
+assign rd_cnt_nxt       = (rd_cnt_set ? rd_cnt_set_val : (rd_cnt_inc ? rd_cnt + 1'b1 : rd_cnt)) & {(CNT_WTH){~rd_cnt_clr}};
+assign rd_cnt_inc       = hor_act_line_smo & line_bf_dvld;
+assign rd_cnt_clr       = ver_idle_smo|hor_line_blk_smo;
+assign rd_cnt_set       = 1'b0;
+assign rd_cnt_set_val   = 1'b0;
+
+//------------------------------------------------------------equal (vertical part)
+assign sel_cnt_eq       =                   (sel_cnt  == KRNV_SZ-1)             & sel_cnt_inc;
+assign fr_pad_eq        = fr_pad_com_smo  & ((hor_cnt == FR_PAD +1 +FR_PAD[0])) & fr_en & hor_cnt_inc;
+assign bk_pad_eq        = hor_bk_pad_smo  & (hor_cnt  == BK_PAD)                & hor_cnt_inc;
+assign top_pad_eq       = ver_top_pad_smo & (ver_cnt  == TOP_PAD)               & ver_cnt_inc;
+assign btm_pad_eq       = ver_btm_pad_smo & (ver_cnt  == BTM_PAD)               & ver_cnt_inc;
+assign hor_num_min1_eq  =                   (wr_cnt   == hor_num - 2);
+assign hor_num_eq       =                   (wr_cnt   == hor_num - 1);
+
+//------------------------------------------------------------memory and data
+
+generate  
+  for (gmi = 0;gmi<KRNV_SZ;gmi = gmi+1) begin : gen_golden
+    assign golden_data[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi] = gmem_do[ctrl_num[MAX_PAD_WTH*(gmi+1)-1:MAX_PAD_WTH*gmi]];
+  end
+endgenerate
+
+assign gmem_we                = i_href_0_dly;
+assign gmem_addra             = wb_hor_cnt;
+assign gmem_addrb             = rd_cnt;
+assign gmem_di                = i_data_0;
+
+/*
+generate  
+  for (gmi = 0;gmi<KRNV_SZ;gmi = gmi+1) begin : gen_gmem
+    
+    assign ip_en[gmi]   = sel_cnt == gmi; 
+    assign wb_addr[gmi] = (wb_sel_line[gmi] & wb_ver_eq) ? wb_hor_cnt - SEN_PIXEL_DLY+1 : gmem_addra;
+    always@(posedge clk) begin 
+      if(ip_en[gmi] | wb_sel_line[gmi:gmi])
+        mem[gmi][wb_addr[gmi]] <= ip_en[gmi] ? (gmem_di) : (wb_vld & wb_ver_eq) ? wb_data : mem[gmi][wb_addr[gmi]];
+      else 
+        mem[gmi][wb_addr[gmi]] <= mem[gmi][wb_addr[gmi]];
+    end
+
+    assign gmem_do[gmi] <= mem[gmi][gmem_addrb];
+
+  end
+endgenerate
+
+
+
+      if(ip_en[gmi]) begin
+        mem_nxt[gmi][wb_addr[gmi]] = ip_en[gmi] ? (gmem_di) : mem[gmi][wb_addr[gmi]];
+      end 
+      else begin
+        if(wb_sel_line[gmi])
+          mem_nxt[gmi][gmem_addrb] = (wb_vld & wb_ver_eq) ? wb_mem[gmem_addrb] : mem[gmi][gmem_addrb];
+        else 
+          mem_nxt[gmi][wb_addr[gmi]] = mem[gmi][wb_addr[gmi]];
+      end 
+      
+      
+*/
+
+reg [7:0] test,test_1,test_2,test_3;
+reg test_en,test_en_1,test_en_2,test_en_3;
+
+always@(posedge clk) begin
+  wb_mem[0][gmem_addra]    <= wb_ver_eq ? hor_href_eq ? ({8{wb_vld}} & wb_data) : wb_mem[0][gmem_addra] : 8'b0;
+  wb_mem_en[0][gmem_addra] <= wb_ver_eq ? hor_href_eq ? wb_vld : wb_mem_en[0][gmem_addra] : 1'b0;
+  test_2  <= wb_ver_eq ? hor_href_eq ? ({8{wb_vld}} & wb_data) : wb_mem[0][gmem_addra] : 8'b0;
+  test_en_2  <= wb_ver_eq ? hor_href_eq ? wb_vld : wb_mem_en[0][gmem_addra] : 1'b0;
+end 
+
+generate  
+  for (gmi = 1;gmi<BUF_LINE_DLY;gmi = gmi+1) begin : gen_wb_mem
+    always@(posedge clk) begin
+      wb_mem[gmi][gmem_addra]    <= hor_href_eq ? wb_mem[gmi-1][gmem_addra] : wb_mem[gmi][gmem_addra];
+      wb_mem_en[gmi][gmem_addra] <= hor_href_eq ? wb_mem_en[gmi-1][gmem_addra] : wb_mem_en[gmi][gmem_addra];
+      test_3     <= hor_href_eq ? wb_mem[gmi-1][gmem_addra] : wb_mem[gmi][gmem_addra];
+      test_en_3 <= hor_href_eq ? wb_mem_en[gmi-1][gmem_addra] : wb_mem_en[gmi][gmem_addra];
+    end 
+  end 
+endgenerate 
+
+generate  
+  for (gmi = 0;gmi<KRNV_SZ;gmi = gmi+1) begin : gen_gmem
+    
+    assign ip_en[gmi]   = sel_cnt == gmi; 
+    assign wb_addr[gmi] = (wb_sel_line[gmi] & wb_ver_eq) ? wb_hor_cnt - SEN_PIXEL_DLY+1 : gmem_addra;
+
+    always@(posedge clk) begin
+
+      if(ip_en[gmi] & wb_sel_line[gmi]) begin
+        mem[gmi][gmem_addra] <= wb_mem_en[BUF_LINE_DLY-2][gmem_addra] ? wb_mem[BUF_LINE_DLY-2][gmem_addra] : gmem_di;
+      end 
+      else
+      if(ip_en[gmi]) begin
+        mem[gmi][gmem_addra] <= ip_en[gmi] ? (gmem_di) : mem[gmi][gmem_addra];
+      end 
+      else begin
+        if(wb_sel_line[gmi]) begin 
+           mem[gmi][gmem_addra] <= wb_mem_en[BUF_LINE_DLY-2][gmem_addra] ? wb_mem[BUF_LINE_DLY-2][gmem_addra] : mem[gmi][gmem_addra];
+           test      <= wb_mem[BUF_LINE_DLY-2][gmem_addra];
+           test_en   <= wb_mem_en[BUF_LINE_DLY-2][gmem_addra];
+           test_1    <= wb_mem[BUF_LINE_DLY-1][gmem_addra];
+           test_en_1 <= wb_mem_en[BUF_LINE_DLY-1][gmem_addra];
+        end 
+        else 
+           mem[gmi][gmem_addra] <= mem[gmi][gmem_addra];
+      end 
+    end 
+
+    
+    assign gmem_do[gmi] = mem[gmi][gmem_addrb];
+end
+endgenerate
+
+always@(posedge clk or negedge rst_n) begin 
+  if(!rst_n)
+    test <= 0;
+end 
+
+//-------------------------------------------front padding and back padding 
+generate  
+  for (gmi = 0;gmi<KRNV_SZ;gmi = gmi+1) begin : gen_fr_bk_pad
+    assign fr_pad_num_0[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi] = mem[ctrl_num[MAX_PAD_WTH*(gmi+1)-1:MAX_PAD_WTH*gmi]][0];
+    assign fr_pad_num_1[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi] = mem[ctrl_num[MAX_PAD_WTH*(gmi+1)-1:MAX_PAD_WTH*gmi]][1];
+    assign bk_pad_num_0_nxt[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi] = (hor_cnt == ini_ssr_hwin_sz-1) ? mem[ctrl_num[MAX_PAD_WTH*(gmi+1)-1:MAX_PAD_WTH*gmi]][gmem_addra-1] :
+                                                                                              bk_pad_num_0[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi];
+    assign bk_pad_num_1_nxt[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi] = (hor_cnt == ini_ssr_hwin_sz-1) ? mem[ctrl_num[MAX_PAD_WTH*(gmi+1)-1:MAX_PAD_WTH*gmi]][gmem_addra-2] :
+                                                                                              bk_pad_num_1[DBUF_DW*(gmi+1)-1:DBUF_DW*gmi];
+    
+  end
+endgenerate
+
+assign fr_pad_num_0_eq       = fr_pad_com_smo & (fr_pad_num_0 == line_bf_data);
+assign fr_pad_num_1_eq       = fr_pad_com_smo & (fr_pad_num_1 == line_bf_data);
+assign bk_pad_num_0_eq       = hor_bk_pad_smo & (bk_pad_num_0 == line_bf_data);
+assign bk_pad_num_1_eq       = hor_bk_pad_smo & (bk_pad_num_1 == line_bf_data);
+
+assign fr_pad_num_0_cnt_nxt  = (fr_pad_num_0_cnt_inc ? fr_pad_num_0_cnt + 1'b1 : fr_pad_num_0_cnt) & {(CNT_WTH){~fr_pad_num_0_cnt_clr}};
+assign fr_pad_num_0_cnt_inc  = fr_pad_num_0_eq & line_bf_dvld;
+assign fr_pad_num_0_cnt_clr  = line_bf_hstr;
+
+assign fr_pad_num_1_cnt_nxt  = (fr_pad_num_1_cnt_inc ? fr_pad_num_1_cnt + 1'b1 : fr_pad_num_1_cnt) & {(CNT_WTH){~fr_pad_num_1_cnt_clr}};
+assign fr_pad_num_1_cnt_inc  = fr_pad_num_1_eq & line_bf_dvld;
+assign fr_pad_num_1_cnt_clr  = line_bf_hstr;
+
+assign bk_pad_num_0_cnt_nxt  = (bk_pad_num_0_cnt_inc ? bk_pad_num_0_cnt + 1'b1 : bk_pad_num_0_cnt) & {(CNT_WTH){~bk_pad_num_0_cnt_clr}};
+assign bk_pad_num_0_cnt_inc  = bk_pad_num_0_eq & line_bf_dvld;
+assign bk_pad_num_0_cnt_clr  = line_bf_hstr;
+
+assign bk_pad_num_1_cnt_nxt  = (bk_pad_num_1_cnt_inc ? bk_pad_num_1_cnt + 1'b1 : bk_pad_num_1_cnt) & {(CNT_WTH){~bk_pad_num_1_cnt_clr}};
+assign bk_pad_num_1_cnt_inc  = bk_pad_num_1_eq & line_bf_dvld;
+assign bk_pad_num_1_cnt_clr  = line_bf_hstr;
+
+assign fr_pad_num_1_cnt_chk  = PAD_MODE ? (fr_pad_num_1_cnt < fr_pad_num_0_cnt) : |fr_pad_num_1_cnt;
+assign top_pad_num_chk       = (fr_pad_num_0_cnt + fr_pad_num_1_cnt) != FR_PAD;
+
+assign bk_pad_num_1_cnt_chk  = PAD_MODE ? (bk_pad_num_1_cnt < bk_pad_num_0_cnt) : |bk_pad_num_1_cnt;
+assign bk_pad_num_chk        = (bk_pad_num_0_cnt + bk_pad_num_1_cnt) != BK_PAD;
+
+//-------------------------------------------total number 
+assign total_num             = FR_PAD + BK_PAD + ini_ssr_hwin_sz;
+assign total_num_eq          = total_num != hor_cnt;
+
+//-------------------------------------------line range 
+
+assign golden_rng_nxt        = line_bf_dvld ? {golden_rng[KRNV_SZ*DBUF_DW*(ODATA_RNG-1)-1:0],line_bf_data} : golden_rng; 
+
+//================================================================================
+// print information
+//================================================================================
+
+//-------------------------------------------line buffer 
+always@(posedge clk) begin 
+  if(line_bf_vstr)
+    $display("test information : KRNV_SZ =%d\ntest information : ODATA_RNG =%d\ntest information : ODATA_FREQ =%d\ntest information : TOP_PAD =%d\ntest information : BTM_PAD =%d\ntest information : FR_PAD =%d\ntest information : BK_PAD =%d\ntest information : PAD_MODE =%d\n ",KRNV_SZ,ODATA_RNG,ODATA_FREQ,TOP_PAD,BTM_PAD,FR_PAD,BK_PAD,PAD_MODE);
+
+
+end 
+
+always@(posedge clk) begin 
+  if (line_bf_dvld & interrupt_mask) begin 
+
+    if((golden_data != line_bf_data) & hor_act_line_smo) begin 
+      $display("[ERROR]: hor_act_line data mismatch , golden_data is %h and line_bf_data is  %h ",golden_data,line_bf_data);
+      -> data_cmp_err;
+      //#10000
+      //$finish;
+    end
+
+  end
+end 
+
+always@(posedge clk) begin 
+  if (hor_act_line_smo & line_bf_dvld & interrupt_mask) begin 
+    if(fr_pad_num_1_cnt_chk | top_pad_num_chk)begin
+      $display("[ERROR]: top padding data mismatch ,fr_pad_num_0_cnt number is %h and fr_pad_num_1_cnt number is  %h ",fr_pad_num_0_cnt,fr_pad_num_1_cnt);
+      -> fr_pad_num_err;
+      //#10000
+      //$finish;
+    end
+  end
+end 
+
+always@(posedge clk) begin 
+  if (line_rng_hend & interrupt_mask) begin 
+    if(bk_pad_num_1_cnt_chk | bk_pad_num_chk)begin
+      $display("[ERROR]: back padding data mismatch ,bk_pad_num_0_cnt number is %h and bk_pad_num_1_cnt number is  %h ",bk_pad_num_0_cnt,bk_pad_num_1_cnt);
+      -> bk_pad_num_err;
+      //#10000
+      //$finish;
+    end
+  end
+end 
+
+always@(posedge clk) begin 
+  if (line_rng_hend & interrupt_mask) begin 
+    if(total_num_eq)begin
+      $display("[ERROR]: total number dismatch , correct number is %h , now total number is %h",total_num,hor_cnt);
+      -> total_num_err;
+      //#10000
+      //$finish;
+    end
+  end
+end 
+
+
+//-------------------------------------------line range
+
+always@(posedge clk) begin 
+  if (line_rng_dvld & interrupt_mask) begin 
+
+  if(golden_rng_dly != line_rng_data) begin 
+    $display("[ERROR]: data mismatch , golden range data is %h and line range data is  %h ",golden_rng_dly,line_rng_data);
+    -> range_data_cmp_err;
+  end
+
+  end
+end 
+
+always@(posedge clk) begin 
+  if (line_rng_dvld & interrupt_mask) begin 
+
+  if(golden_rng_dly != line_rng_data) begin 
+    $display("[ERROR]: data mismatch , golden range data is %h and line range data is  %h ",golden_rng_dly,line_rng_data);
+    -> range_data_cmp_err;
+  end
+
+  end
+end 
+
+
+always@(posedge clk or negedge rst_n) begin
+if (!rst_n) begin
+  fr_en            <= 0;
+  bk_en            <= 0;
+  hor_cnt          <= 0;
+  ver_cnt          <= 0;
+  sel_cnt          <= 0;
+  wr_cnt           <= 0;
+  rd_cnt           <= 0;
+  last_col_0       <= 0;
+  last_col_1       <= 0;
+  col_sel          <= 0;
+  golden_rng       <= 0;
+  golden_rng_dly   <= 0;
+  
+  fr_pad_num_0_cnt <= 0;
+  fr_pad_num_1_cnt <= 0;
+  bk_pad_num_0_cnt <= 0;
+  bk_pad_num_1_cnt <= 0;
+
+  bk_pad_num_0     <= 0;
+  bk_pad_num_1     <= 0;
+  
+  i_href_0_dly     <= 0;
+
+end
+else begin
+  fr_en            <= fr_en_nxt;
+  bk_en            <= bk_en_nxt;
+  hor_cnt          <= hor_cnt_nxt;
+  ver_cnt          <= ver_cnt_nxt;
+  sel_cnt          <= sel_cnt_nxt;
+  wr_cnt           <= wr_cnt_nxt;
+  rd_cnt           <= rd_cnt_nxt;
+  ctrl_num         <= ctrl_num_nxt;
+  last_col_0       <= last_col_0_nxt;
+  last_col_1       <= last_col_1_nxt;
+  col_sel          <= col_sel_nxt;
+  golden_rng       <= golden_rng_nxt;
+  golden_rng_dly   <= golden_rng;
+  
+  fr_pad_num_0_cnt <= fr_pad_num_0_cnt_nxt;
+  fr_pad_num_1_cnt <= fr_pad_num_1_cnt_nxt;
+  bk_pad_num_0_cnt <= bk_pad_num_0_cnt_nxt;
+  bk_pad_num_1_cnt <= bk_pad_num_1_cnt_nxt;
+  
+  bk_pad_num_0     <= bk_pad_num_0_nxt;
+  bk_pad_num_1     <= bk_pad_num_1_nxt;
+  
+  i_href_0_dly     <= i_href_0;
+end
+end
+
+/*
+always@(posedge clk or negedge rst_n) begin
+if (!rst_n) begin
+  for (rst_i = 0;rst_i<DBUF_DW;rst_i = rst_i+1) begin : rst
+    for (rst_i_2 = 0;rst_i_2<KRNV_SZ;rst_i_2 = rst_i_2+1) begin : rst_2
+      for (rst_i_3 = 0;rst_i_3<DBUF_DEP;rst_i_3 = rst_i_3+1) begin : rst_3
+        mem[rst_i][rst_i_2][rst_i_3]    <= 0;
+        mem_nxt[rst_i][rst_i_2][rst_i_3]    <= 0;
+      end 
+    end
+  end 
+end
+else begin 
+  for (rst_i = 0;rst_i<DBUF_DW;rst_i = rst_i+1) begin
+    for (rst_i_2 = 0;rst_i_2<KRNV_SZ;rst_i_2 = rst_i_2+1) begin : rst_2
+      for (rst_i_3 = 0;rst_i_3<DBUF_DEP;rst_i_3 = rst_i_3+1) begin : rst_3
+        mem[rst_i][rst_i_2][rst_i_3]    <= mem_nxt[rst_i][rst_i_2][rst_i_3];
+      end 
+    end
+  end 
+end
+end
+
+always@(posedge clk or negedge rst_n) begin
+if (!rst_n) begin
+  for (rst_i = 0;rst_i<DBUF_DW;rst_i = rst_i+1) begin
+    for (rst_i_2 = 0;rst_i_2<DBUF_DEP;rst_i_2 = rst_i_2+1) begin
+        wb_mem[rst_i][rst_i_2]    <= 0;
+        wb_mem_nxt[rst_i][rst_i_2]    <= 0;
+      end 
+    end
+end 
+else begin 
+  for (rst_i = 0;rst_i<DBUF_DW;rst_i = rst_i+1) begin
+    for (rst_i_2 = 0;rst_i_2<DBUF_DEP;rst_i_2 = rst_i_2+1) begin
+      wb_mem[rst_i][rst_i_2]  <= wb_mem_nxt[rst_i][rst_i_2];
+      
+    end 
+  end 
+end
+end
+*/
+  
+endmodule
+

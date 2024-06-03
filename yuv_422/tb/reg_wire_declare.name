@@ -1,0 +1,2 @@
+reg                 sensor_tpat_en;
+reg                 r_yuv_422_swap_yc=0;

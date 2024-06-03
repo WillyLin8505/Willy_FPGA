@@ -1,0 +1,257 @@
+// +FHDR -----------------------------------------------------------------------
+// Copyright (c) Silicon Optronics. Inc. 2014
+//
+// File Name:           ip_i2c_m_top_trl.v
+// Author:              Willy Lin
+// Version:             $Revision$
+// Last Modified On:    10/13
+// Last Modified By:    $Author$
+//
+// File Description:    i2c master muti trigger
+//                      
+// Clock Domain: input:384k,1536k,2048k,3072k
+//               output(SCL):96k,384k,512k,768k
+//               output(CLK):384k,1536k,2048k,3072k
+// -FHDR -----------------------------------------------------------------------
+module i2cm_muti_trg
+
+   #( 
+      parameter    I2C_NUM     = 15,
+      parameter    NUM_WID     = $clog2(I2C_NUM),
+      parameter    TRG_CDC     = "ASYNC"                    // "SYNC"/"ASYNC"
+     )
+(
+//----------------------------------------------//
+// Output declaration                           //
+//----------------------------------------------//
+
+output                     o_sda_en,
+output                     o_scl_en,
+output reg                 o_finish_tgl_0,
+output reg                 o_finish_tgl_1,
+output reg                 o_nack_ntfy_tgl_0,
+output reg                 o_nack_ntfy_tgl_1,
+output                     o_i2c_data_sel_0_smo,
+output                     o_i2c_data_sel_1_smo,
+
+output                     o_data_wen,
+output     [7:0]           o_data,
+output reg [7:0]           o_addr,
+output                     o_trg_flag,
+output                     o_dev_id_dir,
+
+//----------------------------------------------//
+// Input declaration                            //
+//----------------------------------------------//
+
+input                      i2c_clk,
+input                      i2c_rst_n,
+input                      r_i2cm_nack_0,
+input                      r_i2cm_nack_1,
+input                      r_i2cm_type_0,
+input                      r_i2cm_type_1,
+input                      r_i2cm_stb_0,
+input                      r_i2cm_stb_1,
+input                      r_i2cm_seq_0,
+input                      r_i2cm_seq_1,
+input                      i_i2cm_trg_0,
+input                      r_i2cm_trg_1,
+input       [NUM_WID-1:0]  r_i2cm_num_0,
+input       [NUM_WID-1:0]  r_i2cm_num_1,
+input       [7:0]          r_i2cm_dev_id_0,
+input       [7:0]          r_i2cm_dev_id_1,
+input       [7:0]          r_i2cm_addr_0,
+input       [7:0]          r_i2cm_addr_1,
+input       [7:0]          i_i2cm_data,                //the data need to be change frequencely , so the head mark is i_ rather then using r_
+
+
+//----------------------------------------------//
+// Inoutput declaration                         //
+//----------------------------------------------//
+
+inout                      io_sda, 
+inout                      io_scl
+
+);
+
+//----------------------------------------------//
+// Register & Wire declaration                  //
+//----------------------------------------------//
+//---------------------------------------------data
+wire [7:0]              dev_id;
+reg  [7:0]              inter_data;
+wire                    sx_trg_0;
+wire                    sx_trg_1;
+wire                    trg_flag_0_nxt;
+reg                     trg_flag_0;
+wire                    trg_flag_1_nxt;
+reg                     trg_flag_1;
+
+//---------------------------------------------data sel
+wire                    stb_sel;
+wire                    seq_sel;
+wire [NUM_WID-1:0]      num_sel;
+wire [7:0]              dev_id_sel;
+wire [7:0]              addr_sel;
+wire                    nack_sel;
+wire                    type_sel;
+
+wire                    o_finish_tgl_0_nxt;
+wire                    o_finish_tgl_1_nxt;
+wire                    o_nack_ntfy_tgl_0_nxt;
+wire                    o_nack_ntfy_tgl_1_nxt;
+//---------------------------------------------block wire 
+wire                    i2c_p2s_smo;
+wire                    trans_finish_pulse;
+wire                    nack;
+
+//----------------------------------------------//
+// Code Descriptions                            //
+//----------------------------------------------//
+
+
+//---------------------------------------------data select
+assign stb_sel                  = trg_flag_0 ? r_i2cm_stb_0    : r_i2cm_stb_1;
+assign seq_sel                  = trg_flag_0 ? r_i2cm_seq_0    : r_i2cm_seq_1;
+assign num_sel                  = trg_flag_0 ? r_i2cm_num_0    : r_i2cm_num_1;
+assign dev_id_sel               = trg_flag_0 ? r_i2cm_dev_id_0 : r_i2cm_dev_id_1;
+assign addr_sel                 = trg_flag_0 ? r_i2cm_addr_0   : r_i2cm_addr_1;
+assign nack_sel                 = trg_flag_0 ? r_i2cm_nack_0   : r_i2cm_nack_1;
+assign type_sel                 = trg_flag_0 ? r_i2cm_type_0   : r_i2cm_type_1;
+
+assign o_finish_tgl_0_nxt       = (trg_flag_0 & trans_finish_pulse)       ^ o_finish_tgl_0;
+assign o_finish_tgl_1_nxt       = (trg_flag_0==1'b0 & trans_finish_pulse) ^ o_finish_tgl_1;
+assign o_nack_ntfy_tgl_0_nxt    = (trg_flag_0 & nack)       ^ o_nack_ntfy_tgl_0;
+assign o_nack_ntfy_tgl_1_nxt    = (trg_flag_0==1'b0 & nack) ^ o_nack_ntfy_tgl_1;
+
+assign int_pos_nxt
+
+//---------------------------------------------data  
+
+assign io_scl   = (o_scl_en)?1'hz : 1'h0 ;                //fsm use o_scl_en to control io_scl
+assign io_sda   = (o_sda_en)?1'hz : 1'h0 ;                //fsm use o_scl_en to control io_sda
+assign dev_id   = {o_dev_id_dir,r_i2cm_dev_id_1[6:0]};    //device id for output id address
+
+always @* begin : inter_data_
+
+  inter_data = 8'h00; 
+
+  case({o_i2c_data_sel_0_smo,o_i2c_data_sel_1_smo}) // synopsys full_case
+   2'b00:  inter_data = 8'h01;       //stb
+   2'b01:  inter_data = dev_id;      //dev_id
+   2'b10:  inter_data = i_i2cm_data; //address and data
+  endcase
+end    
+
+assign trg_flag_0_nxt      = (sx_trg_0 | trg_flag_0)   & ~(trans_finish_pulse);                     // make flag wave of trigger 
+assign trg_flag_1_nxt      = (sx_trg_1 | trg_flag_1)   & ~(trans_finish_pulse & ~trg_flag_0_nxt);   // make flag wave of trigger 
+assign o_trg_flag          = (trg_flag_0_nxt | trg_flag_1_nxt);   
+
+
+
+always @(posedge i2c_clk or negedge i2c_rst_n) begin
+   if (~i2c_rst_n) begin
+     trg_flag_0         <= 1'b0;
+     trg_flag_1         <= 1'b0;
+     o_finish_tgl_0     <= 1'b0;
+     o_finish_tgl_1     <= 1'b0;
+     o_nack_ntfy_tgl_0  <= 1'b0;
+     o_nack_ntfy_tgl_1  <= 1'b0;
+   end
+   else begin
+     trg_flag_0         <= trg_flag_0_nxt;
+     trg_flag_1         <= trg_flag_1_nxt;
+     o_finish_tgl_0     <= o_finish_tgl_0_nxt;
+     o_finish_tgl_1     <= o_finish_tgl_1_nxt;
+     o_nack_ntfy_tgl_0  <= o_nack_ntfy_tgl_0_nxt;
+     o_nack_ntfy_tgl_1  <= o_nack_ntfy_tgl_1_nxt;
+   end
+end
+
+
+
+//----------------------------------------------//
+// Module Instance                              //
+//----------------------------------------------//
+
+
+i2cm 
+              #(
+         .NUM_WID              (NUM_WID),
+         .TRG_CDC              (TRG_CDC)
+               )
+
+i2cm(
+         .o_sda_en             (o_sda_en),
+         .o_scl_en             (o_scl_en),
+
+         .o_wr_data_wen        (o_data_wen),
+         .o_wr_data            (o_data),
+         .o_addr               (o_addr),
+         .o_dev_id_dir         (o_dev_id_dir),
+         .o_i2c_p2s_smo        (i2c_p2s_smo),
+         .o_i2c_data_sel_0_smo (o_i2c_data_sel_0_smo),
+         .o_i2c_data_sel_1_smo (o_i2c_data_sel_1_smo),
+         .o_trans_finish_pulse (trans_finish_pulse),
+         .o_nack               (nack),
+
+         .i2c_clk              (i2c_clk),
+         .i2c_rst_n            (i2c_rst_n),
+         .i_i2cm_data          (i_i2cm_data),               
+         .i2cm_nack            (nack_sel),
+         .i2cm_type            (type_sel),
+         .i2cm_stb             (stb_sel),
+         .i2cm_seq             (seq_sel),
+         .i2cm_num             (num_sel),
+         .i2cm_dev_id          (dev_id_sel),
+         .i2cm_addr            (addr_sel),
+
+         .i_trg_flag           (o_trg_flag),
+         .inter_data           (inter_data),
+
+         .i_sda                (io_sda), 
+         .i_scl                (io_scl)
+);
+
+
+
+//----------------------------------------------//
+// generate block                               //
+//----------------------------------------------//
+   
+
+generate
+
+if (TRG_CDC == "ASYNC") begin
+ip_sync2 trg_0(
+                //output
+                .ffq                          (sx_trg_0),
+
+                //input
+                .ffd                          (i_i2cm_trg_0),
+                .sync_clk                     (i2c_clk),
+                .sync_rst_n                   (i2c_rst_n)
+                );
+
+ip_sync2 trg_1(
+                //output
+                .ffq                          (sx_trg_1),
+
+                //input
+                .ffd                          (r_i2cm_trg_1),
+                .sync_clk                     (i2c_clk),
+                .sync_rst_n                   (i2c_rst_n)
+                );
+
+end
+else begin
+
+assign sx_trg_0 = i_i2cm_trg_0;
+assign sx_trg_1 = r_i2cm_trg_1;
+
+end
+
+endgenerate
+
+
+endmodule

@@ -1,0 +1,12 @@
+reg [15:0]        ini_sensor_hblkf_sz;
+reg [15:0]        ini_sensor_hblkb_sz;
+reg               ini_sensor_tpat_en;
+reg [15:0]        ini_ssr_hwin_sz;
+reg [15:0]        ini_ssr_vwin_sz;
+reg               ini_wb_en;
+reg [1:0]         GOLD_NUM;
+reg [2:0]         ini_ppm_sel;
+reg [4:0]         r_bf_sigma_r;
+reg               r_bf_ofst_r;        
+reg [1:0]         r_bf_op_mode; 
+reg               r_sigma_s_sel; 

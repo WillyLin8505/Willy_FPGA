@@ -1,0 +1,26 @@
+reg [15:0]        ini_sensor_hblkf_sz;
+reg [15:0]        ini_sensor_hblkb_sz;
+reg               ini_sensor_tpat_en;
+reg [11:0]        ini_crop_hwin_sz;
+reg [10:0]        ini_crop_vwin_sz;
+reg [4:0]         r_border_en;
+reg               r_border_type;
+reg [7:0]         r_border_y;
+reg [7:0]         r_border_cb;
+reg [7:0]         r_border_cr;
+reg [4:0]         r_border_width;
+reg [1:0]         r_trn_rate;
+
+reg [23:0]        r_coord_0_1st;
+reg [23:0]        r_coord_0_2nd; 
+reg [23:0]        r_coord_1_1st;
+reg [23:0]        r_coord_1_2nd; 
+reg [23:0]        r_coord_2_1st;
+reg [23:0]        r_coord_2_2nd; 
+reg [23:0]        r_coord_3_1st;
+reg [23:0]        r_coord_3_2nd;           
+reg [23:0]        r_coord_4_1st;
+reg [23:0]        r_coord_4_2nd; 
+
+reg [11:0]        r_dest_hwin;
+reg [11:0]        r_dest_vwin;

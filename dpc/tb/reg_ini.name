@@ -1,0 +1,132 @@
+ //-----------------------------------------------------------------------------
+//  testbench register
+//-----------------------------------------------------------------------------
+
+
+"ini_sensor_tpat_en": begin
+   `TB_TOP.ini_sensor_tpat_en = reg_value;
+end
+
+"ini_ssr_hwin_sz": begin
+   `TB_TOP.ini_ssr_hwin_sz = reg_value;
+end
+
+"ini_ssr_vwin_sz": begin
+   `TB_TOP.ini_ssr_vwin_sz = reg_value;
+end
+
+"ini_sensor_hblkf_sz": begin
+   `TB_TOP.ini_sensor_hblkf_sz = reg_value;
+end
+
+"ini_sensor_hblkb_sz": begin
+   `TB_TOP.ini_sensor_hblkb_sz = reg_value;
+end
+
+"ini_src_sel": begin
+   `TB_TOP.ini_src_sel = reg_value;
+end
+
+"ini_golden_sel": begin
+   `TB_TOP.ini_golden_sel = reg_value;
+end
+
+"r_ssr_again": begin
+   `TB_TOP.r_ssr_again = reg_value;
+end
+
+"r_ssr_blc_tgt": begin
+   `TB_TOP.r_ssr_blc_tgt = reg_value;
+end
+
+"r_ssr_drkc": begin
+   `TB_TOP.r_ssr_drkc = reg_value;
+end
+
+"r_ssr_cgcf": begin
+   `TB_TOP.r_ssr_cgcf = reg_value;
+end
+
+"r_ssr_ns_parm1": begin
+   `TB_TOP.r_ssr_ns_parm1 = reg_value;
+end
+
+"r_ssr_ns_parm2": begin
+   `TB_TOP.r_ssr_ns_parm2 = reg_value;
+end
+
+"r_step1_w_low_nlm": begin
+   `TB_TOP.r_step1_w_low_nlm = reg_value;
+end
+
+"r_step1_w_transit_rng": begin
+   `TB_TOP.r_step1_w_transit_rng = reg_value;
+end
+
+"r_step1_b_low_nlm": begin
+   `TB_TOP.r_step1_b_low_nlm = reg_value;
+end
+
+"r_step1_b_transit_rng": begin
+   `TB_TOP.r_step1_b_transit_rng = reg_value;
+end
+
+"r_step2_w_rto_thres": begin
+   `TB_TOP.r_step2_w_rto_thres = reg_value;
+end
+
+"r_step2_w_buf_rng": begin
+   `TB_TOP.r_step2_w_buf_rng = reg_value;
+end
+
+"r_step2_b_rto_thres": begin
+   `TB_TOP.r_step2_b_rto_thres = reg_value;
+end
+
+"r_step2_b_buf_rng": begin
+   `TB_TOP.r_step2_b_buf_rng = reg_value;
+end
+
+"r_step2_w_cnt_thres": begin
+   `TB_TOP.r_step2_w_cnt_thres = reg_value;
+end
+
+"r_step2_w_cnt_buf_rng": begin
+   `TB_TOP.r_step2_w_cnt_buf_rng = reg_value;
+end
+
+"r_step2_b_cnt_thres": begin
+   `TB_TOP.r_step2_b_cnt_thres = reg_value;
+end
+
+"r_step2_b_cnt_buf_rng": begin
+   `TB_TOP.r_step2_b_cnt_buf_rng = reg_value;
+end
+
+"r_dpc_en": begin
+   `TB_TOP.r_dpc_en = reg_value;
+end
+
+"r_debug_en": begin
+   `TB_TOP.r_debug_en = reg_value;
+end
+
+"r_repl_col": begin
+   `TB_TOP.r_repl_col = reg_value;
+end
+
+"r_coord_mirror": begin
+   `TB_TOP.r_coord_mirror = reg_value;
+end
+
+"r_haddr_start": begin
+   `TB_TOP.r_haddr_start = reg_value;
+end
+
+"r_mode_sel": begin
+   `TB_TOP.r_mode_sel = reg_value;
+end
+
+
+   
+

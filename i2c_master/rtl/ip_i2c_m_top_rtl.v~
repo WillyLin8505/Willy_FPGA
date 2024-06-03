@@ -1,0 +1,195 @@
+// +FHDR -----------------------------------------------------------------------
+// Copyright (c) Silicon Optronics. Inc. 2014
+//
+// File Name:           ip_i2c_m_top_trl.v
+// Author:              Willy Lin
+// Version:             $Revision$
+// Last Modified On:    8/26
+// Last Modified By:    $Author$
+//
+// File Description:    i2c master top 
+//                      
+// Clock Domain: input:384k,1536k,2048k,3072k
+//               output:96k,384k,512k,768k
+// -FHDR -----------------------------------------------------------------------
+module ip_i2c_m_top
+   #( 
+      parameter    NUM_WID     = 5,
+      parameter    TRG_CDC     = "SYNC"                    // "SYNC"/"ASYNC"
+     )
+(
+
+//----------------------------------------------//
+// Output declaration                           //
+//----------------------------------------------//
+
+output                 o_sda_en,
+output                 o_scl_en,
+output                 o_finish_tgl,
+output                 o_wr_data_wen,
+output                 o_nack_ntfy_tgl,
+output [7:0]           o_data_addr,
+output [7:0]           o_wr_data,
+output                 o_busy;
+
+//----------------------------------------------//
+// Input declaration                            //
+//----------------------------------------------//
+
+input                  i2c_clk,
+input                  i2c_rst_n,
+input                  r_i2cm_nack,
+input                  r_i2cm_type,
+input                  r_i2cm_stb,
+input                  r_i2cm_seq,
+input                  r_i2cm_trg,
+input [NUM_WID-1:0]    r_i2cm_num,
+input [7:0]            r_i2cm_dev_id,
+input [7:0]            r_i2cm_data_addr,
+input [7:0]            i_i2cm_data,                //the data need to be change frequencely , so the head mark is i_ rather then using r_
+
+
+//----------------------------------------------//
+// Inoutput declaration                         //
+//----------------------------------------------//
+
+inout                  io_sda, 
+inout                  io_scl
+
+);
+
+//----------------------------------------------//
+// Register & Wire declaration                  //
+//----------------------------------------------//
+
+//---------------------------------------------data
+wire [7:0]              dev_id;
+reg  [7:0]              inter_data;
+reg                     i2c_p2s_smo_q;
+reg                     p2s_dp_en_q;
+//---------------------------------------------block wire 
+wire                    dev_id_dir;
+wire                    i2c_p2s_smo;
+wire                    i2c_data_sel_0_smo;
+wire                    i2c_data_sel_1_smo;
+wire                    sxi_trg;
+wire                    p2s_dp_en;
+wire                    s2p_dp_en;
+wire                    s_data;
+//----------------------------------------------//
+// Code Descriptions                            //
+//----------------------------------------------//
+
+//---------------------------------------------data  
+
+assign io_scl   = (o_scl_en)?1'hz : 1'h0 ;              //fsm use o_scl_en to control io_scl
+assign io_sda   = (o_sda_en)?1'hz : 1'h0 ;              //fsm use o_scl_en to control io_sda
+assign dev_id   = {dev_id_dir,r_i2cm_dev_id[6:0]};      //device id for output id address
+
+always @* begin : inter_data_block
+
+  inter_data = 8'h00; 
+
+  case({i2c_data_sel_0_smo,i2c_data_sel_1_smo}) // synopsys full_case
+   2'b00:  inter_data = 8'h80;       //stb
+   2'b01:  inter_data = dev_id;      //dev_id
+   2'b10:  inter_data = i_i2cm_data; //address and data
+  endcase
+end     
+
+always@(posedge i2c_clk or negedge i2c_rst_n) begin
+   if(~i2c_rst_n) begin
+     i2c_p2s_smo_q <= 1'b0;
+     p2s_dp_en_q   <= 1'b0;
+   end
+   else begin
+     i2c_p2s_smo_q <= i2c_p2s_smo;
+     p2s_dp_en_q   <= p2s_dp_en;
+   end
+end
+                                  
+//----------------------------------------------//
+// Module Instance                              //
+//----------------------------------------------//
+   
+
+i2c_m_ctrl #(.NUM_WID(NUM_WID)) i2c_m_ctrl(
+                .o_sda_en                     (o_sda_en),
+                .o_scl_en                     (o_scl_en),
+                .o_finish_tgl                 (o_finish_tgl),
+                .o_nack_ntfy_tgl              (o_nack_ntfy_tgl),
+                .o_wr_data_wen                (o_wr_data_wen),
+                .o_data_addr                  (o_data_addr),
+                .o_busy                       (o_busy),
+
+                .o_i2c_p2s_smo                (i2c_p2s_smo),                     
+                .o_i2c_data_sel_0_smo         (i2c_data_sel_0_smo),
+                .o_i2c_data_sel_1_smo         (i2c_data_sel_1_smo), 
+                .o_dev_id_dir                 (dev_id_dir),                
+                .o_p2s_dp_en                  (p2s_dp_en),
+                .o_s2p_dp_en                  (s2p_dp_en),
+
+                .i2c_clk                      (i2c_clk),
+                .i2c_rst_n                    (i2c_rst_n),
+                .r_i2cm_nack                  (r_i2cm_nack),
+                .r_i2cm_type                  (r_i2cm_type),
+                .r_i2cm_seq                   (r_i2cm_seq),
+                .r_i2cm_stb                   (r_i2cm_stb),
+                .r_i2cm_num                   (r_i2cm_num),
+                .r_i2cm_data_addr             (r_i2cm_data_addr),
+                .i_dev_id_msb                 (r_i2cm_dev_id[7]),
+                .i_sda                        (io_sda),
+                .i_scl                        (io_scl),
+
+                .i_sxi_trg                    (sxi_trg),
+                .i_s_data                     (s_data)
+
+
+                );
+
+p2s_dp p2s(
+               .o_data_ser                    (s_data),
+               .clk                           (i2c_clk),
+               .rst_n                         (i2c_rst_n),
+               .i_shift_en                    (p2s_dp_en_q),
+               .i_store_en                    (i2c_p2s_smo_q),
+               .i_data_par                    (inter_data)
+               );
+
+s2p_dp s2p(
+               .o_data_par                    (o_wr_data),
+               .clk                           (i2c_clk),
+               .rst_n                         (i2c_rst_n),
+               .i_shift_en                    (s2p_dp_en),
+               .i_data_ser                    (io_sda)
+               );
+
+//----------------------------------------------//
+// generate block                               //
+//----------------------------------------------//
+   
+
+generate
+
+if (TRG_CDC == "ASYNC") begin
+ip_sync2 trg(
+                //output
+                .ffq                          (sxi_trg),
+
+                //input
+                .ffd                          (r_i2cm_trg),
+                .sync_clk                     (i2c_clk),
+                .sync_rst_n                   (i2c_rst_n)
+                );
+end
+else begin
+
+assign sxi_trg = r_i2cm_trg;
+
+end
+
+endgenerate
+
+
+
+endmodule 

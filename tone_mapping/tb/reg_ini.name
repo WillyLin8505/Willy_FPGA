@@ -1,0 +1,41 @@
+//-----------------------------------------------------------------------------
+//  testbench register
+//-----------------------------------------------------------------------------
+
+
+"ini_data": begin
+   `TB_TOP.ini_data = reg_value;
+end
+
+"ini_l_tone_y_data": begin
+   `TB_TOP.ini_l_tone_y_data = reg_value;
+end
+
+"ini_sensor_tpat_en": begin
+   `TB_TOP.ini_sensor_tpat_en = reg_value;
+end
+
+"ini_ssr_hwin_sz": begin
+   `TB_TOP.ini_ssr_hwin_sz = reg_value;
+end
+
+"ini_ssr_vwin_sz": begin
+   `TB_TOP.ini_ssr_vwin_sz = reg_value;
+end
+
+"ini_sensor_hblkf_sz": begin
+   `TB_TOP.ini_sensor_hblkf_sz = reg_value;
+end
+
+"ini_sensor_hblkb_sz": begin
+   `TB_TOP.ini_sensor_hblkb_sz = reg_value;
+end
+
+"GOLD_NUM": begin
+   `TB_TOP.GOLD_NUM = reg_value;
+end
+
+"ini_ppm_sel": begin
+   `TB_TOP.ini_ppm_sel = reg_value;
+end
+
