@@ -1,9 +1,0 @@
-reg   [14:0]        ini_data;
-reg   [15*25-1:0]   ini_l_tone_y_data;
-reg   [15:0]        ini_sensor_hblkf_sz;
-reg   [15:0]        ini_sensor_hblkb_sz;
-reg                 ini_sensor_tpat_en;
-reg   [15:0]        ini_ssr_hwin_sz;
-reg   [15:0]        ini_ssr_vwin_sz;
-reg   [1:0]         GOLD_NUM;
-reg   [2:0]         ini_ppm_sel;
