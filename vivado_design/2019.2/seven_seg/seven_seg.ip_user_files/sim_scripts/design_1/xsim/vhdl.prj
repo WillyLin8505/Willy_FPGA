@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ipshared/1a51/seven_seg.vhd" \
+"../../../bd/design_1/ip/design_1_seven_seg_1_0/sim/design_1_seven_seg_1_0.vhd" \
+
+nosort

@@ -1,0 +1,2405 @@
+TRACE::2024-09-17.21:21:38::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:38::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:38::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:40::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:41::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:41::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:41::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-09-17.21:21:43::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-09-17.21:21:43::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed"
+		}]
+}
+TRACE::2024-09-17.21:21:43::SCWPlatform::Boot application domains not present, creating them
+TRACE::2024-09-17.21:21:43::SCWDomain::checking for install qemu data   : 
+TRACE::2024-09-17.21:21:43::SCWDomain:: Using the QEMU Data from install at  : D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2024-09-17.21:21:43::SCWDomain:: Using the QEMU args  from install at  : D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:43::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2024-09-17.21:21:43::SCWPlatform::Generating the sources  .
+TRACE::2024-09-17.21:21:43::SCWBDomain::Generating boot domain sources.
+TRACE::2024-09-17.21:21:43::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:43::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:43::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-09-17.21:21:43::SCWMssOS::No sw design opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::mss does not exists at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::Creating sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::Adding the swdes entry, created swdb C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::Writing mss at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:43::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-09-17.21:21:43::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-17.21:21:43::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-17.21:21:43::SCWBDomain::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-09-17.21:21:54::SCWPlatform::Generating sources Done.
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2024-09-17.21:21:54::SCWMssOS::Could not open the swdb for C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2024-09-17.21:21:54::SCWMssOS::Could not open the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Cleared the swdb table entry
+TRACE::2024-09-17.21:21:54::SCWMssOS::No sw design opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::mss exists loading the mss file  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Opened the sw design from mss  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Adding the swdes entry C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-09-17.21:21:54::SCWMssOS::updating the scw layer about changes
+TRACE::2024-09-17.21:21:54::SCWMssOS::Opened the sw design.  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-09-17.21:21:54::SCWDomain::checking for install qemu data   : 
+TRACE::2024-09-17.21:21:54::SCWDomain:: Using the QEMU Data from install at  : D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2024-09-17.21:21:54::SCWDomain:: Using the QEMU args  from install at  : D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::No sw design opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::mss does not exists at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Creating sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Adding the swdes entry, created swdb C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Writing mss at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-09-17.21:21:54::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-17.21:21:54::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:54::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:54::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:54::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:54::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-09-17.21:21:54::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2024-09-17.21:21:56::SCWPlatform::Started generating the artifacts platform zed
+TRACE::2024-09-17.21:21:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-17.21:21:56::SCWPlatform::Started generating the artifacts for system configuration zed
+LOG::2024-09-17.21:21:56::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-09-17.21:21:56::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-09-17.21:21:56::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-09-17.21:21:56::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-09-17.21:21:56::SCWSystem::Checking the domain standalone_domain
+LOG::2024-09-17.21:21:56::SCWSystem::Not a boot domain 
+LOG::2024-09-17.21:21:56::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-09-17.21:21:56::SCWDomain::Generating domain artifcats
+TRACE::2024-09-17.21:21:56::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/qemu/
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/standalone_domain/qemu/
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+KEYINFO::2024-09-17.21:21:56::SCWMssOS::Could not open the swdb for C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2024-09-17.21:21:56::SCWMssOS::Could not open the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Cleared the swdb table entry
+TRACE::2024-09-17.21:21:56::SCWMssOS::No sw design opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::mss exists loading the mss file  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::Opened the sw design from mss  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::Adding the swdes entry C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-09-17.21:21:56::SCWMssOS::updating the scw layer about changes
+TRACE::2024-09-17.21:21:56::SCWMssOS::Opened the sw design.  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-09-17.21:21:56::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-17.21:21:56::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-17.21:21:56::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-09-17.21:21:56::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying to export directory.
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-17.21:21:56::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2024-09-17.21:21:56::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-09-17.21:21:56::SCWSystem::Completed Processing the sysconfig zed
+LOG::2024-09-17.21:21:56::SCWPlatform::Completed generating the artifacts for system configuration zed
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-17.21:21:56::SCWSystem::Writing the bif file for system config zed
+TRACE::2024-09-17.21:21:56::SCWSystem::dir created 
+TRACE::2024-09-17.21:21:56::SCWSystem::Writing the bif 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Completed generating the platform
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"8136a8e5b1fe3114ce71509b18d6ad8b",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-17.21:21:56::SCWPlatform::updated the xpfm file.
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"8136a8e5b1fe3114ce71509b18d6ad8b",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"8136a8e5b1fe3114ce71509b18d6ad8b",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-09-17.21:21:56::SCWPlatform::Started generating the artifacts platform zed
+TRACE::2024-09-17.21:21:56::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-17.21:21:56::SCWPlatform::Started generating the artifacts for system configuration zed
+LOG::2024-09-17.21:21:56::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-09-17.21:21:56::SCWDomain::Generating domain artifcats
+TRACE::2024-09-17.21:21:56::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/qemu/
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/standalone_domain/qemu/
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-09-17.21:21:56::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-17.21:21:56::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-17.21:21:56::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-09-17.21:21:56::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-09-17.21:21:56::SCWMssOS::Copying to export directory.
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-17.21:21:56::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2024-09-17.21:21:56::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2024-09-17.21:21:56::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-09-17.21:21:56::SCWSystem::Completed Processing the sysconfig zed
+LOG::2024-09-17.21:21:56::SCWPlatform::Completed generating the artifacts for system configuration zed
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-17.21:21:56::SCWSystem::Writing the bif file for system config zed
+TRACE::2024-09-17.21:21:56::SCWSystem::dir created 
+TRACE::2024-09-17.21:21:56::SCWSystem::Writing the bif 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-17.21:21:56::SCWPlatform::Completed generating the platform
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:21:56::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:21:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:21:56::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:21:56::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:21:56::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"8136a8e5b1fe3114ce71509b18d6ad8b",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-17.21:21:56::SCWPlatform::updated the xpfm file.
+LOG::2024-09-17.21:30:05::SCWPlatform::Started generating the artifacts platform zed
+TRACE::2024-09-17.21:30:05::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-09-17.21:30:05::SCWPlatform::Started generating the artifacts for system configuration zed
+LOG::2024-09-17.21:30:05::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-09-17.21:30:05::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-09-17.21:30:05::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-09-17.21:30:05::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2024-09-17.21:30:05::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:05::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:05::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:05::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:30:05::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:05::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:30:05::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:30:05::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:30:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:30:05::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:30:05::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:30:05::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:30:05::SCWBDomain::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-09-17.21:30:05::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-17.21:30:05::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-09-17.21:30:05::SCWBDomain::System Command Ran  C:&  cd  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl & make 
+TRACE::2024-09-17.21:30:05::SCWBDomain::make -C zynq_fsbl_bsp
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[1]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-09-17.21:30:05::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-09-17.21:30:05::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:05::SCWBDomain::bsrc/coresightps_dcc_v1_6/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:05::SCWBDomain::src/coresightps_dcc_v1_6/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-09-17.21:30:05::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-09-17.21:30:05::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:05::SCWBDomain::bsrc/cpu_cortexa9_v2_8/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:05::SCWBDomain::src/cpu_cortexa9_v2_8/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:05::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:05::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:05::SCWBDomain::bsrc/ddrps_v1_0/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:05::SCWBDomain::src/ddrps_v1_0/src'
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:05::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:05::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:05::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:05::SCWBDomain::bsrc/devcfg_v3_5/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/devcfg_v3_5/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:06::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:06::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/dmaps_v2_5/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/dmaps_v2_5/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-09-17.21:30:06::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-09-17.21:30:06::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/emacps_v3_10/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/emacps_v3_10/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:06::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:06::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/gpiops_v3_6/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/gpiops_v3_6/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:06::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:06::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/qspips_v3_6/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/qspips_v3_6/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:06::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:06::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/scugic_v4_1/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:06::SCWBDomain::src/scugic_v4_1/src'
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-09-17.21:30:06::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-09-17.21:30:06::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:06::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:06::SCWBDomain::bsrc/scutimer_v2_1/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:07::SCWBDomain::src/scutimer_v2_1/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:07::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:07::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:07::SCWBDomain::bsrc/scuwdt_v2_1/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:07::SCWBDomain::src/scuwdt_v2_1/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-09-17.21:30:07::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-09-17.21:30:07::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:07::SCWBDomain::bsrc/sdps_v3_8/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:07::SCWBDomain::src/sdps_v3_8/src'
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-09-17.21:30:07::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-09-17.21:30:07::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:07::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:07::SCWBDomain::bsrc/standalone_v7_1/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[3]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/standalone_v7_1/src/profile'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[3]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/standalone_v7_1/src/profile'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/standalone_v7_1/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:08::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:08::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/ttcps_v3_10/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/ttcps_v3_10/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:08::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:08::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/uartps_v3_8/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/uartps_v3_8/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:08::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:08::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/usbps_v2_4/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/usbps_v2_4/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:08::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:08::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/xadcps_v2_3/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:08::SCWBDomain::src/xadcps_v2_3/src'
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:08::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:08::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:08::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:08::SCWBDomain::bsrc/xilffs_v4_2/src'
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:09::SCWBDomain::src/xilffs_v4_2/src'
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:09::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:09::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:09::SCWBDomain::bsrc/xilrsa_v1_5/src'
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:09::SCWBDomain::src/xilrsa_v1_5/src'
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-09-17.21:30:09::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-09-17.21:30:09::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:09::SCWBDomain::bsrc/coresightps_dcc_v1_6/src'
+
+TRACE::2024-09-17.21:30:09::SCWBDomain::"Compiling coresightps_dcc"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:11::SCWBDomain::src/coresightps_dcc_v1_6/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-09-17.21:30:11::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-09-17.21:30:11::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:11::SCWBDomain::bsrc/cpu_cortexa9_v2_8/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Compiling cpu_cortexa9"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:11::SCWBDomain::src/cpu_cortexa9_v2_8/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:11::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:11::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:11::SCWBDomain::bsrc/ddrps_v1_0/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Compiling ddrps"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:11::SCWBDomain::src/ddrps_v1_0/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:11::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:11::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:11::SCWBDomain::bsrc/devcfg_v3_5/src'
+
+TRACE::2024-09-17.21:30:11::SCWBDomain::"Compiling devcfg"
+
+TRACE::2024-09-17.21:30:12::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:12::SCWBDomain::src/devcfg_v3_5/src'
+
+TRACE::2024-09-17.21:30:12::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-09-17.21:30:12::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:12::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:12::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:12::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:12::SCWBDomain::bsrc/dmaps_v2_5/src'
+
+TRACE::2024-09-17.21:30:12::SCWBDomain::"Compiling dmaps"
+
+TRACE::2024-09-17.21:30:13::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:13::SCWBDomain::src/dmaps_v2_5/src'
+
+TRACE::2024-09-17.21:30:13::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-09-17.21:30:13::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-09-17.21:30:13::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-09-17.21:30:13::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:13::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:13::SCWBDomain::bsrc/emacps_v3_10/src'
+
+TRACE::2024-09-17.21:30:14::SCWBDomain::"Compiling emacps"
+
+TRACE::2024-09-17.21:30:15::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:15::SCWBDomain::src/emacps_v3_10/src'
+
+TRACE::2024-09-17.21:30:15::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-09-17.21:30:15::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:15::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:15::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:15::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:15::SCWBDomain::bsrc/gpiops_v3_6/src'
+
+TRACE::2024-09-17.21:30:15::SCWBDomain::"Compiling gpiops"
+
+TRACE::2024-09-17.21:30:16::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:16::SCWBDomain::src/gpiops_v3_6/src'
+
+TRACE::2024-09-17.21:30:16::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-09-17.21:30:16::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:16::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:16::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:16::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:16::SCWBDomain::bsrc/qspips_v3_6/src'
+
+TRACE::2024-09-17.21:30:17::SCWBDomain::"Compiling qspips"
+
+TRACE::2024-09-17.21:30:18::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:18::SCWBDomain::src/qspips_v3_6/src'
+
+TRACE::2024-09-17.21:30:18::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-09-17.21:30:18::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:18::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:18::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:18::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:18::SCWBDomain::bsrc/scugic_v4_1/src'
+
+TRACE::2024-09-17.21:30:18::SCWBDomain::"Compiling scugic"
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:19::SCWBDomain::src/scugic_v4_1/src'
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:19::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:19::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:19::SCWBDomain::bsrc/scutimer_v2_1/src'
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::"Compiling scutimer"
+
+TRACE::2024-09-17.21:30:19::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:19::SCWBDomain::src/scutimer_v2_1/src'
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:20::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:20::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:20::SCWBDomain::bsrc/scuwdt_v2_1/src'
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::"Compiling scuwdt"
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:20::SCWBDomain::src/scuwdt_v2_1/src'
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-09-17.21:30:20::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-09-17.21:30:20::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:20::SCWBDomain::bsrc/sdps_v3_8/src'
+
+TRACE::2024-09-17.21:30:20::SCWBDomain::"Compiling sdps"
+
+TRACE::2024-09-17.21:30:22::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:22::SCWBDomain::src/sdps_v3_8/src'
+
+TRACE::2024-09-17.21:30:22::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-09-17.21:30:22::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-09-17.21:30:22::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-09-17.21:30:22::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:22::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:22::SCWBDomain::bsrc/standalone_v7_1/src'
+
+TRACE::2024-09-17.21:30:22::SCWBDomain::"Compiling standalone"
+
+TRACE::2024-09-17.21:30:27::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:27::SCWBDomain::src/standalone_v7_1/src'
+
+TRACE::2024-09-17.21:30:27::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2024-09-17.21:30:27::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:27::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:27::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:27::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:27::SCWBDomain::bsrc/ttcps_v3_10/src'
+
+TRACE::2024-09-17.21:30:27::SCWBDomain::"Compiling ttcps"
+
+TRACE::2024-09-17.21:30:28::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:28::SCWBDomain::src/ttcps_v3_10/src'
+
+TRACE::2024-09-17.21:30:28::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-09-17.21:30:28::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:28::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:28::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:28::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:28::SCWBDomain::bsrc/uartps_v3_8/src'
+
+TRACE::2024-09-17.21:30:28::SCWBDomain::"Compiling uartps"
+
+TRACE::2024-09-17.21:30:30::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:30::SCWBDomain::src/uartps_v3_8/src'
+
+TRACE::2024-09-17.21:30:30::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-09-17.21:30:30::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:30::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:30::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:30::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:30::SCWBDomain::bsrc/usbps_v2_4/src'
+
+TRACE::2024-09-17.21:30:30::SCWBDomain::"Compiling usbps"
+
+TRACE::2024-09-17.21:30:31::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:31::SCWBDomain::src/usbps_v2_4/src'
+
+TRACE::2024-09-17.21:30:31::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-09-17.21:30:31::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:31::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:31::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:31::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:31::SCWBDomain::bsrc/xadcps_v2_3/src'
+
+TRACE::2024-09-17.21:30:31::SCWBDomain::"Compiling xadcps"
+
+TRACE::2024-09-17.21:30:32::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:32::SCWBDomain::src/xadcps_v2_3/src'
+
+TRACE::2024-09-17.21:30:32::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_2/src"
+
+TRACE::2024-09-17.21:30:32::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:32::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:32::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:32::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:32::SCWBDomain::bsrc/xilffs_v4_2/src'
+
+TRACE::2024-09-17.21:30:32::SCWBDomain::"Compiling XilFFs Library"
+
+TRACE::2024-09-17.21:30:34::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:34::SCWBDomain::src/xilffs_v4_2/src'
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src"
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:35::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:35::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::make[2]: Entering directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/li
+TRACE::2024-09-17.21:30:35::SCWBDomain::bsrc/xilrsa_v1_5/src'
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::make[2]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2024-09-17.21:30:35::SCWBDomain::src/xilrsa_v1_5/src'
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::'Finished building libraries'
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::make[1]: Leaving directory 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cortexa9_0/
+TRACE::2024-09-17.21:30:35::SCWBDomain::include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2024-09-17.21:30:35::SCWBDomain::9_0/include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2024-09-17.21:30:35::SCWBDomain::0/include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c image_mover.c -o image_mover.o -Izynq_fsbl_b
+TRACE::2024-09-17.21:30:35::SCWBDomain::sp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2024-09-17.21:30:35::SCWBDomain::0/include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_fsbl_bsp
+TRACE::2024-09-17.21:30:35::SCWBDomain::/ps7_cortexa9_0/include -I.
+
+TRACE::2024-09-17.21:30:35::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c main.c -o main.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2024-09-17.21:30:35::SCWBDomain::9_0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_cortexa9_
+TRACE::2024-09-17.21:30:36::SCWBDomain::0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2024-09-17.21:30:36::SCWBDomain::9_0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c ps7_init.c -o ps7_init.o -Izynq_fsbl_bsp/ps7
+TRACE::2024-09-17.21:30:36::SCWBDomain::_cortexa9_0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_cortexa
+TRACE::2024-09-17.21:30:36::SCWBDomain::9_0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -c fsbl_handoff.S -o fsbl_handoff.o -Izynq_fsbl
+TRACE::2024-09-17.21:30:36::SCWBDomain::_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2024-09-17.21:30:36::SCWBDomain::arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
+TRACE::2024-09-17.21:30:36::SCWBDomain::  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2024-09-17.21:30:36::SCWBDomain::hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+TRACE::2024-09-17.21:30:36::SCWBDomain::l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                    -Wl,--gc-section
+TRACE::2024-09-17.21:30:36::SCWBDomain::s -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2024-09-17.21:30:37::SCWSystem::Checking the domain standalone_domain
+LOG::2024-09-17.21:30:37::SCWSystem::Not a boot domain 
+LOG::2024-09-17.21:30:37::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-09-17.21:30:37::SCWDomain::Generating domain artifcats
+TRACE::2024-09-17.21:30:37::SCWMssOS::Generating standalone artifcats
+TRACE::2024-09-17.21:30:37::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/qemu/
+TRACE::2024-09-17.21:30:37::SCWMssOS::Copying the qemu file from  D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/standalone_domain/qemu/
+TRACE::2024-09-17.21:30:37::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-09-17.21:30:37::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:37::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:37::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:37::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:30:37::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:30:37::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:30:37::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:30:37::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:30:37::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:30:37::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:30:37::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:30:37::SCWMssOS::Completed writing the mss file at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-09-17.21:30:37::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:30:37::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-09-17.21:30:37::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-09-17.21:30:37::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-09-17.21:30:37::SCWMssOS::doing bsp build ... 
+TRACE::2024-09-17.21:30:37::SCWMssOS::System Command Ran  C: & cd  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2024-09-17.21:30:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-09-17.21:30:37::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-09-17.21:30:37::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-09-17.21:30:37::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-09-17.21:30:37::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:37::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:37::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-09-17.21:30:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:37::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:37::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:38::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:38::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-09-17.21:30:38::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-09-17.21:30:38::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:38::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:38::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:38::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:38::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:38::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:38::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-09-17.21:30:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-09-17.21:30:38::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-09-17.21:30:38::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:39::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:39::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-09-17.21:30:39::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-09-17.21:30:39::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-09-17.21:30:39::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-09-17.21:30:39::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2024-09-17.21:30:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:39::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:39::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:40::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:40::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-09-17.21:30:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-09-17.21:30:40::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-09-17.21:30:40::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-09-17.21:30:40::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:40::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-09-17.21:30:41::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-09-17.21:30:41::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:41::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:41::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Compiling ddrps"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:41::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:41::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:41::SCWMssOS::"Compiling devcfg"
+
+TRACE::2024-09-17.21:30:42::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2024-09-17.21:30:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:42::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:42::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:42::SCWMssOS::"Compiling dmaps"
+
+TRACE::2024-09-17.21:30:43::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2024-09-17.21:30:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-09-17.21:30:43::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-09-17.21:30:43::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:43::SCWMssOS::"Compiling emacps"
+
+TRACE::2024-09-17.21:30:45::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2024-09-17.21:30:45::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:45::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:45::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:45::SCWMssOS::"Compiling gpiops"
+
+TRACE::2024-09-17.21:30:46::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2024-09-17.21:30:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:46::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:46::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:46::SCWMssOS::"Compiling qspips"
+
+TRACE::2024-09-17.21:30:48::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2024-09-17.21:30:48::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:48::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:48::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:48::SCWMssOS::"Compiling scugic"
+
+TRACE::2024-09-17.21:30:49::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2024-09-17.21:30:49::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-09-17.21:30:49::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-09-17.21:30:49::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:49::SCWMssOS::"Compiling scutimer"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:50::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:50::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-09-17.21:30:50::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-09-17.21:30:50::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:50::SCWMssOS::"Compiling sdps"
+
+TRACE::2024-09-17.21:30:52::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2024-09-17.21:30:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-09-17.21:30:52::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-09-17.21:30:52::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:52::SCWMssOS::"Compiling standalone"
+
+TRACE::2024-09-17.21:30:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2024-09-17.21:30:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:57::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:57::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:57::SCWMssOS::"Compiling ttcps"
+
+TRACE::2024-09-17.21:30:58::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2024-09-17.21:30:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:30:58::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:30:58::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:58::SCWMssOS::"Compiling uartps"
+
+TRACE::2024-09-17.21:30:59::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2024-09-17.21:30:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-09-17.21:30:59::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-09-17.21:30:59::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:30:59::SCWMssOS::"Compiling usbps"
+
+TRACE::2024-09-17.21:31:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2024-09-17.21:31:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-09-17.21:31:01::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-09-17.21:31:01::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-09-17.21:31:01::SCWMssOS::"Compiling xadcps"
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Copying to export directory.
+TRACE::2024-09-17.21:31:02::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-09-17.21:31:02::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-09-17.21:31:02::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-09-17.21:31:02::SCWSystem::Completed Processing the sysconfig zed
+LOG::2024-09-17.21:31:02::SCWPlatform::Completed generating the artifacts for system configuration zed
+TRACE::2024-09-17.21:31:02::SCWPlatform::Started preparing the platform 
+TRACE::2024-09-17.21:31:02::SCWSystem::Writing the bif file for system config zed
+TRACE::2024-09-17.21:31:02::SCWSystem::dir created 
+TRACE::2024-09-17.21:31:02::SCWSystem::Writing the bif 
+TRACE::2024-09-17.21:31:02::SCWPlatform::Started writing the spfm file 
+TRACE::2024-09-17.21:31:02::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-09-17.21:31:02::SCWPlatform::Completed generating the platform
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWWriter::formatted JSON is {
+	"platformName":	"zed",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"zed",
+	"platHandOff":	"D:/xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/zed.xsa",
+	"platIntHandOff":	"<platformDir>/hw/zed.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"zed",
+	"systems":	[{
+			"systemName":	"zed",
+			"systemDesc":	"zed",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"zed",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"3b09af7ce7cf9c0b911f9219d92f4761",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"D:/xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"8136a8e5b1fe3114ce71509b18d6ad8b",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-09-17.21:31:02::SCWPlatform::updated the xpfm file.
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to open the hw design at C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA given C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA absoulate path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform::DSA directory C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Platform Path C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/hw/zed.xsa
+TRACE::2024-09-17.21:31:02::SCWPlatform:: Unique name xilinx:zed:design_1:0.0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2024-09-17.21:31:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-09-17.21:31:02::SCWMssOS::Checking the sw design at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-09-17.21:31:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-09-17.21:31:02::SCWMssOS::Sw design exists and opened at  C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/ps7_cortexa9_0/standalone_domain/bsp/system.mss

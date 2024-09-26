@@ -1,0 +1,551 @@
+21:05:21 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\temp_xsdb_launch_script.tcl
+21:05:25 INFO  : XSCT server has started successfully.
+21:05:26 INFO  : Registering command handlers for Vitis TCF services
+21:05:33 INFO  : plnx-install-location is set to ''
+21:05:33 INFO  : Successfully done setting XSCT server connection channel  
+21:05:33 INFO  : Successfully done query RDI_DATADIR 
+21:05:33 INFO  : Successfully done setting workspace for the tool. 
+21:28:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:28:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+21:28:24 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+21:31:02 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+21:31:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:31:35 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+21:31:35 INFO  : 'jtag frequency' command is executed.
+21:31:35 INFO  : Context for 'APU' is selected.
+21:31:36 INFO  : System reset is completed.
+21:31:39 INFO  : 'after 3000' command is executed.
+21:31:39 INFO  : Context for 'APU' is selected.
+21:31:39 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+21:31:39 INFO  : 'configparams force-mem-access 1' command is executed.
+21:31:39 INFO  : Context for 'APU' is selected.
+21:31:39 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+21:31:40 INFO  : 'ps7_init' command is executed.
+21:31:40 INFO  : 'ps7_post_config' command is executed.
+21:31:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:31:40 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:31:40 INFO  : 'configparams force-mem-access 0' command is executed.
+21:31:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:31:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:31:40 INFO  : 'con' command is executed.
+21:31:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:31:40 INFO  : Launch script is exported to file 'C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\.sdk\launch_scripts\single_application_debug\systemdebugger_zedboard_system_standalone.tcl'
+21:32:09 INFO  : Disconnected from the channel tcfchan#1.
+21:32:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:32:09 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+21:32:09 INFO  : 'jtag frequency' command is executed.
+21:32:09 INFO  : Context for 'APU' is selected.
+21:32:09 INFO  : System reset is completed.
+21:32:12 INFO  : 'after 3000' command is executed.
+21:32:12 INFO  : Context for 'APU' is selected.
+21:32:12 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+21:32:12 INFO  : 'configparams force-mem-access 1' command is executed.
+21:32:12 INFO  : Context for 'APU' is selected.
+21:32:12 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+21:32:13 INFO  : 'ps7_init' command is executed.
+21:32:13 INFO  : 'ps7_post_config' command is executed.
+21:32:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:13 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:32:13 INFO  : 'configparams force-mem-access 0' command is executed.
+21:32:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:32:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:14 INFO  : 'con' command is executed.
+21:32:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:32:14 INFO  : Launch script is exported to file 'C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\.sdk\launch_scripts\single_application_debug\systemdebugger_zedboard_system_standalone.tcl'
+21:32:50 INFO  : Generated template bif file for zedboard_system
+21:33:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:33:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+21:33:15 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+15:52:02 INFO  : Disconnected from the channel tcfchan#5.
+18:43:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\temp_xsdb_launch_script.tcl
+18:43:38 INFO  : XSCT server has started successfully.
+18:43:39 INFO  : plnx-install-location is set to ''
+18:43:39 INFO  : Successfully done setting XSCT server connection channel  
+18:43:39 INFO  : Successfully done setting workspace for the tool. 
+18:43:41 INFO  : Registering command handlers for Vitis TCF services
+18:43:46 INFO  : Successfully done query RDI_DATADIR 
+18:45:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:45:22 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+18:46:27 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+18:46:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:46:58 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+18:47:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:47:26 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+18:47:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:55 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+18:47:55 INFO  : 'jtag frequency' command is executed.
+18:47:55 INFO  : Context for 'APU' is selected.
+18:47:55 INFO  : System reset is completed.
+18:47:58 INFO  : 'after 3000' command is executed.
+18:47:58 INFO  : Context for 'APU' is selected.
+18:47:58 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+18:47:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:58 INFO  : Context for 'APU' is selected.
+18:47:58 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+18:47:59 INFO  : 'ps7_init' command is executed.
+18:47:59 INFO  : 'ps7_post_config' command is executed.
+18:47:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:59 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Release/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Release/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:59 INFO  : 'con' command is executed.
+18:47:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:59 INFO  : Launch script is exported to file 'C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\.sdk\launch_scripts\single_application_debug\debugger_zedboard-default.tcl'
+18:48:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:13 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+18:48:13 INFO  : 'jtag frequency' command is executed.
+18:48:13 INFO  : Context for 'APU' is selected.
+18:48:14 INFO  : System reset is completed.
+18:48:17 INFO  : 'after 3000' command is executed.
+18:48:17 INFO  : Context for 'APU' is selected.
+18:48:17 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+18:48:17 INFO  : 'configparams force-mem-access 1' command is executed.
+18:48:17 INFO  : Context for 'APU' is selected.
+18:48:17 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+18:48:17 INFO  : 'ps7_init' command is executed.
+18:48:17 INFO  : 'ps7_post_config' command is executed.
+18:48:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:17 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:48:17 INFO  : 'configparams force-mem-access 0' command is executed.
+18:48:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:48:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:17 INFO  : 'con' command is executed.
+18:48:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:48:17 INFO  : Disconnected from the channel tcfchan#1.
+18:48:34 WARN  : channel "tcfchan#1" closed
+18:48:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:35 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+18:48:35 INFO  : 'jtag frequency' command is executed.
+18:48:35 INFO  : Context for 'APU' is selected.
+18:48:36 INFO  : System reset is completed.
+18:48:39 INFO  : 'after 3000' command is executed.
+18:48:39 INFO  : Context for 'APU' is selected.
+18:48:41 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+18:48:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:48:41 INFO  : Context for 'APU' is selected.
+18:48:41 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+18:48:41 INFO  : 'ps7_init' command is executed.
+18:48:41 INFO  : 'ps7_post_config' command is executed.
+18:48:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:42 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:48:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:48:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:48:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:42 INFO  : 'con' command is executed.
+18:48:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:48:42 INFO  : Launch script is exported to file 'C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\.sdk\launch_scripts\single_application_debug\systemdebugger_zedboard_system_standalone.tcl'
+18:48:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:49:02 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+20:49:54 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+20:50:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa is already opened
+
+20:50:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:50:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+20:50:12 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+20:51:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:51:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+20:51:12 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+20:52:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:00 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+20:52:00 INFO  : 'jtag frequency' command is executed.
+20:52:00 INFO  : Context for 'APU' is selected.
+20:52:00 INFO  : System reset is completed.
+20:52:03 INFO  : 'after 3000' command is executed.
+20:52:03 INFO  : Context for 'APU' is selected.
+20:52:03 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+20:52:03 INFO  : 'configparams force-mem-access 1' command is executed.
+20:52:03 INFO  : Context for 'APU' is selected.
+20:52:03 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+20:52:04 INFO  : 'ps7_init' command is executed.
+20:52:04 INFO  : 'ps7_post_config' command is executed.
+20:52:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:04 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:52:04 INFO  : 'configparams force-mem-access 0' command is executed.
+20:52:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:52:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:52:05 INFO  : 'con' command is executed.
+20:52:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:52:05 INFO  : Disconnected from the channel tcfchan#2.
+21:15:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:15:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+21:15:03 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:40:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:40:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:40:47 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:41:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:41:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:41:13 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:41:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:41:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:41:39 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:42:33 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+08:42:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa is already opened
+
+08:42:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:42:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:42:51 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:43:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:43:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:43:04 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:43:23 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+08:43:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa is already opened
+
+08:43:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:43:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:43:41 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:43:57 WARN  : channel "tcfchan#2" closed
+08:43:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:43:58 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+08:43:58 INFO  : 'jtag frequency' command is executed.
+08:43:58 INFO  : Context for 'APU' is selected.
+08:43:58 INFO  : System reset is completed.
+08:44:01 INFO  : 'after 3000' command is executed.
+08:44:01 INFO  : Context for 'APU' is selected.
+08:44:01 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+08:44:01 INFO  : 'configparams force-mem-access 1' command is executed.
+08:44:01 INFO  : Context for 'APU' is selected.
+08:44:01 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+08:44:01 INFO  : 'ps7_init' command is executed.
+08:44:01 INFO  : 'ps7_post_config' command is executed.
+08:44:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:44:02 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:44:02 INFO  : 'configparams force-mem-access 0' command is executed.
+08:44:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:44:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:44:02 INFO  : 'con' command is executed.
+08:44:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:44:02 INFO  : Launch script is exported to file 'C:\Users\sssss\OneDrive\vivado_part\2019.2\seven_seg\.sdk\launch_scripts\single_application_debug\systemdebugger_zedboard_system_standalone.tcl'
+08:44:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:44:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:44:13 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+08:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:36 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+08:55:36 INFO  : 'jtag frequency' command is executed.
+08:55:36 INFO  : Context for 'APU' is selected.
+08:55:36 INFO  : System reset is completed.
+08:55:39 INFO  : 'after 3000' command is executed.
+08:55:39 INFO  : Context for 'APU' is selected.
+08:55:39 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+08:55:39 INFO  : 'configparams force-mem-access 1' command is executed.
+08:55:39 INFO  : Context for 'APU' is selected.
+08:55:40 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+08:55:40 INFO  : 'ps7_init' command is executed.
+08:55:40 INFO  : 'ps7_post_config' command is executed.
+08:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:40 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+08:55:40 INFO  : 'configparams force-mem-access 0' command is executed.
+08:55:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+08:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+08:55:40 INFO  : 'con' command is executed.
+08:55:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+08:55:40 INFO  : Disconnected from the channel tcfchan#4.
+08:55:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:55:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+08:55:50 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+18:58:25 INFO  : Checking for BSP changes to sync application flags for project 'zedboard'...
+18:58:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa is already opened
+
+18:58:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:58:37 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+18:58:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa is already opened
+
+18:58:47 INFO  : Generated template bif file for zedboard
+18:58:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:59 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+18:58:59 INFO  : 'jtag frequency' command is executed.
+18:58:59 INFO  : Context for 'APU' is selected.
+18:58:59 INFO  : System reset is completed.
+18:59:02 INFO  : 'after 3000' command is executed.
+18:59:02 INFO  : Context for 'APU' is selected.
+18:59:02 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+18:59:02 INFO  : 'configparams force-mem-access 1' command is executed.
+18:59:02 INFO  : Context for 'APU' is selected.
+18:59:02 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+18:59:03 INFO  : 'ps7_init' command is executed.
+18:59:03 INFO  : 'ps7_post_config' command is executed.
+18:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:03 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:59:03 INFO  : 'configparams force-mem-access 0' command is executed.
+18:59:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:03 INFO  : 'con' command is executed.
+18:59:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:59:03 INFO  : Disconnected from the channel tcfchan#7.
+18:59:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+18:59:13 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+19:21:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:27 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+19:21:27 INFO  : 'jtag frequency' command is executed.
+19:21:27 INFO  : Context for 'APU' is selected.
+19:21:27 INFO  : System reset is completed.
+19:21:30 INFO  : 'after 3000' command is executed.
+19:21:30 INFO  : Context for 'APU' is selected.
+19:21:30 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+19:21:30 INFO  : 'configparams force-mem-access 1' command is executed.
+19:21:30 INFO  : Context for 'APU' is selected.
+19:21:30 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+19:21:31 INFO  : 'ps7_init' command is executed.
+19:21:31 INFO  : 'ps7_post_config' command is executed.
+19:21:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:21:31 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:21:31 INFO  : 'configparams force-mem-access 0' command is executed.
+19:21:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:21:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:21:31 INFO  : 'con' command is executed.
+19:21:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:21:31 INFO  : Disconnected from the channel tcfchan#9.
+19:21:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+19:21:39 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"
+16:09:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:48 INFO  : Jtag cable 'Digilent Zed 210248B84A66' is selected.
+16:09:48 INFO  : 'jtag frequency' command is executed.
+16:09:48 INFO  : Context for 'APU' is selected.
+16:09:49 INFO  : System reset is completed.
+16:09:52 INFO  : 'after 3000' command is executed.
+16:09:52 INFO  : Context for 'APU' is selected.
+16:09:52 INFO  : Hardware design information is loaded from 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa'.
+16:09:52 INFO  : 'configparams force-mem-access 1' command is executed.
+16:09:52 INFO  : Context for 'APU' is selected.
+16:09:52 INFO  : Sourcing of 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl' is done.
+16:09:52 INFO  : 'ps7_init' command is executed.
+16:09:52 INFO  : 'ps7_post_config' command is executed.
+16:09:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:53 INFO  : The application 'C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:09:53 INFO  : 'configparams force-mem-access 0' command is executed.
+16:09:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:09:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:53 INFO  : 'con' command is executed.
+16:09:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:09:53 INFO  : Disconnected from the channel tcfchan#10.
+16:12:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248B84A66" && level==0} -index 1' command is executed.
+16:12:16 INFO  : FPGA configured successfully with bitstream "C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/seven_seg.runs/impl_1/design_1_wrapper.bit"

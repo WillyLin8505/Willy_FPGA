@@ -1,0 +1,8 @@
+timestamp=[2024-09-17 21:05:19], mode=WORKBENCH_START, duration=0:00:08.570, duration_ms=8570, data={}
+timestamp=[2024-09-17 21:05:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.783, duration_ms=783, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-09-17 21:22:09], mode=APP_CREATION, duration=0:00:30.884, duration_ms=30884, data={name=zedboard, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=zed, application_type=application}
+timestamp=[2024-09-17 21:31:02], mode=PLATFORM_GENERATION, duration=0:00:58.956, duration_ms=58956, data={name=zed}
+timestamp=[2024-09-17 21:32:54], mode=MISC, duration=0:00:04.619, duration_ms=4619, data={name=zedboard_system, type=bif_creation}
+timestamp=[2024-09-23 18:43:40], mode=WORKBENCH_START, duration=0:00:23.300, duration_ms=23300, data={}
+timestamp=[2024-09-23 18:43:43], mode=WORKBENCH_UI_INIT, duration=0:00:03.136, duration_ms=3136, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,zed,zedboard,zedboard_system}
+timestamp=[2024-09-24 18:58:51], mode=MISC, duration=0:00:03.766, duration_ms=3766, data={name=zedboard, type=bif_creation}

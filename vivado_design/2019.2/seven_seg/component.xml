@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>seven_seg</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>rst_n</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst_n</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST_N.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>seven_seg</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>13ac26af</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>seven_seg</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>13ac26af</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>920d581c</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst_n</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_button_add</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_button_mis</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>i_button_clr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>o_seg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">6</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>o_seg_sel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>TOTAL_SEQ_NUM</spirit:name>
+        <spirit:displayName>Total Seq Num</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.TOTAL_SEQ_NUM">2</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>MODE_SEL</spirit:name>
+        <spirit:displayName>Mode Sel</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MODE_SEL">0</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>seven_seg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_13ac26af</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>seven_seg.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/seven_seg_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_920d581c</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>seven_seg_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>TOTAL_SEQ_NUM</spirit:name>
+      <spirit:displayName>Total Seq Num</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TOTAL_SEQ_NUM">2</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">seven_seg_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>MODE_SEL</spirit:name>
+      <spirit:displayName>Mode Sel</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MODE_SEL">0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">akintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>seven_seg_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-09-26T22:55:45Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5796699d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39294923_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59e72eec_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d603ed0_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d45b374_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3304d95a_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@621a16ce_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75013919_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65586b7d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49118533_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e245008_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39fa3c4d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@80b6286_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11775ccf_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da85066_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3137e900_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f6124f3_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@136fd7fc_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56758f06_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@573ee6c7_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f503a7e_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b229a7a_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38d466fd_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49cc332d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21a85b8_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1142f910_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78c68ca9_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@310fe3b5_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@abc0191_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@784b4d26_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dc36767_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ff8595c_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e92f2ed_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41d99107_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@457c256e_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e1b0444_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ac014e_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642e147d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b352eef_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c92a612_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26419b9f_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c1bba13_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d67dd46_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27793209_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c56572_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2921e6f8_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8c07eb_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6a7f1e_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@197a6c8_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5397872f_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6392ac57_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fa9c469_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a7fa070_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@685fa6_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@90c64a3_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51853dd9_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dda3d27_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@269ee032_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@675ebb2f_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4a8a8d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dbfb3d8_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a63b208_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c8b047_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69e868bb_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5528810a_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@257e3975_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28810516_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b09990_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e45079_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c10e235_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69acfb56_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ae4d94f_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65a25931_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ec34d5_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2998a28d_ARCHIVE_LOCATION">c:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1d91acf1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="895696f8"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7ade96bd"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="7f14a5a6"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="22d12943"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

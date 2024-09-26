@@ -1,0 +1,9 @@
+TRACE::2024-09-17.21:32:50::SCWBifWriter::Found the complete platform C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/zed.xpfm
+TRACE::2024-09-17.21:32:50::SCWBifWriter::hardware databse : design_1_wrapper_1
+TRACE::2024-09-17.21:32:50::SCWBifWriter::No bitstream found in the design
+TRACE::2024-09-17.21:32:50::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2024-09-17.21:32:50::SCWBifWriter::proc type : 
+TRACE::2024-09-17.21:32:50::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2024-09-17.21:32:50::SCWBifWriter::Device type is : zynq
+TRACE::2024-09-17.21:32:50::SCWBifWriter::Writing BIF to file : C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard_system/_ide/bootimage/template_zedboard_system.bif
+TRACE::2024-09-17.21:32:50::SCWBifWriter::Writing the Zynq Baremetal bif 

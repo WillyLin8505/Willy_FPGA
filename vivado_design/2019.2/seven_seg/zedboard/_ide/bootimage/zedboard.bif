@@ -1,0 +1,11 @@
+/* C:/Users/sssss/AppData/Local/Temp/bootgen_zedboard10849075348796377044/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*zed*/
+the_ROM_image:
+{
+ [bootloader] C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zed/export/zed/sw/zed/boot/fsbl.elf
+ C:/Users/sssss/OneDrive/vivado_part/2019.2/seven_seg/zedboard/Debug/zedboard.elf
+}
